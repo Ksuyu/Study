@@ -6,10 +6,10 @@ td{
 }
 
 .odd td:nth-child(2n + 1){
-    background-color: beige;
+    background-color: rgb(206, 206, 206);
 }
 .even td:nth-child(2n){
-    background-color: beige;
+    background-color: rgb(206, 206, 206);
 }
 
 .king{
@@ -18,12 +18,11 @@ td{
     margin: auto;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom-width: 40px;
-    border-bottom-style: solid;
+    border-bottom: 40px solid;
 }
 
 .black.king{
-    border-bottom-color: black;
+    border-bottom-color: rgb(62, 67, 77);
 }
 
 .white.king{
@@ -41,7 +40,7 @@ td{
 }
 
 .black.king::before{
-    color: black;
+    color: rgb(62, 67, 77);
 }
 
 .white.king::before{
@@ -60,9 +59,294 @@ td{
 }
 
 .black.king::after{
-    background-color: black;
+    background-color: rgb(62, 67, 77);
 }
 
 .white.king::after{
     background-color: white;
+}
+
+/* queen */
+
+.queen{
+    height: 0;
+    width: 0;
+    margin: auto;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 40px solid;
+}
+
+.black.queen{
+    border-bottom-color: rgb(62, 67, 77);
+}
+
+.white.queen{
+    border-bottom-color: white;
+}
+
+.queen::before{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 10px solid;
+    border-top: 10px solid; 
+    border-radius: 100px;
+    top: -8px;
+    left: -5px;
+}
+
+.black.queen::before{
+    color: rgb(62, 67, 77);
+}
+
+.white.queen::before{
+    color: white;
+}
+
+.queen::after{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 20px solid;
+    bottom: 10px;
+    left: -8px;
+    
+    
+}
+
+.black.queen::after{
+    background-color: transparent;
+    color: rgb(62, 67, 77);
+}
+
+.white.queen::after{
+    background-color: transparent;
+    color: white;
+}
+
+/* bishop */
+
+.bishop{
+    height: 0;
+    width: 0;
+    margin: auto;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 40px solid;
+}
+
+.black.bishop{
+    border-bottom-color: rgb(62, 67, 77);
+}
+
+.white.bishop{
+    border-bottom-color: white;
+}
+
+.bishop::before{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 16px solid;
+    border-top: 16px solid; 
+    border-radius: 100px;
+    top: 0px;
+    left: -8px;
+}
+
+.black.bishop::before{
+    color: rgb(62, 67, 77);
+}
+
+.white.bishop::before{
+    color: white;
+}
+
+.bishop::after{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid;
+    bottom: 25px;
+    left: -8px;   
+}
+
+.black.bishop::after{
+    background-color: transparent;
+    color: rgb(62, 67, 77);
+}
+
+.white.bishop::after{
+    background-color: transparent;
+    color: white;
+}
+
+
+/* knight */
+
+.knight{
+    height: 0;
+    width: 0;
+    margin: auto;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 40px solid;
+}
+
+.black.knight{
+    border-bottom-color: rgb(62, 67, 77);
+}
+
+.white.knight{
+    border-bottom-color: white;
+}
+
+.knight::before{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 40px solid;
+    border-top: 16px solid; 
+    border-radius: 100px;
+    transform: rotate(60deg);
+    top: 5px;
+    left: -27px;
+}
+
+.black.knight::before{
+    color: rgb(62, 67, 77);
+}
+
+.white.knight::before{
+    color: white;
+}
+
+.knight::after{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 40px solid;
+    border-top: 16px solid; 
+    border-radius: 100px;
+    transform: rotate(15deg);
+    top: -20px;
+    left: -20px;
+    
+    
+}
+
+.black.knight::after{
+    background-color: transparent;
+    color: rgb(62, 67, 77);
+}
+
+.white.knight::after{
+    background-color: transparent;
+    color: white;
+}
+
+
+/* rook */
+
+.rook{
+    height: 0;
+    width: 0;
+    margin: auto;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 40px solid;
+}
+
+.black.rook{
+    border-bottom-color: rgb(62, 67, 77);
+}
+
+.white.rook{
+    border-bottom-color: white;
+}
+
+.rook::before{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 24px solid;
+    border-top: 20px solid; 
+    border-radius: 4px;
+    top: -3px;
+    left: -12px;
+}
+
+.black.rook::before{
+    color: rgb(62, 67, 77);
+}
+
+.white.rook::before{
+    color: white;
+}
+
+
+/* pawn */
+
+.pawn{
+    height: 0;
+    width: 0;
+    margin: auto;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 35px solid;
+}
+
+.black.pawn{
+    border-bottom-color: rgb(62, 67, 77);
+}
+
+.white.pawn{
+    border-bottom-color: white;
+}
+
+.pawn::before{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 16px solid;
+    border-top: 16px solid; 
+    border-radius: 100px;
+    top: -4px;
+    left: -8px;
+}
+
+.black.pawn::before{
+    color: rgb(62, 67, 77);
+}
+
+.white.pawn::before{
+    color: white;
+}
+
+.pawn::after{
+    content: ' ';
+    display: block;
+    position: relative;
+    border-left: 16px solid;
+    border-bottom: 5px solid;
+    border-radius: 4px;
+    bottom: 6px;
+    left: -8px;
+    
+    
+}
+
+.black.pawn::after{
+    background-color: transparent;
+    color: rgb(62, 67, 77);
+}
+
+.white.pawn::after{
+    background-color: transparent;
+    color: white;
 }
