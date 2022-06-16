@@ -1,40 +1,50 @@
-body {
-    background-color: #fff;
-    color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
-    margin: 0;
-  }
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
 
-  h1 {
-    color: hotpink;
-    font-size: 2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-bottom: 10px dotted purple;
-  }
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
-  h2 {
-    font-size: 1.5em;
-    font-style: italic;
-  }
 
-  .job-title {
-    color: #999999;
-    font-weight: bold;
-  }
+.block {
+  display:block;
+  margin: 0;
+  width: 800px;
+  height: 600px;
+  background-color: #D6F118;
+  color: #FF0000;
 
-  a:link,
-  a:visited {
-    color: #fb6542;
-  }
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
 
-  a:hover {
-    text-decoration: none;
-    color: green;
-  }
+h1 {
+  font-weight: 900;
+  font-size: 210px;
+  line-height: 100%;
+/* identical to box height, or 210px */
+}
 
-  ul {
-      background-color: #eeeeee;
-      border: 5px solid purple;
-      padding: 10px 20px;
-  }
+h3 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 98px;
+  line-height: 100px;
+  font-variant: small-caps;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 152px;
+  line-height: 100%;
+  letter-spacing: 0.065em;
+
+}
