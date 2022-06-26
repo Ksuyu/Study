@@ -22,35 +22,35 @@
 // meeting([['XX', 2], ['XXXX', 6], ['XXXXX', 4]], 0) ---> 'Game On'
 
 
-// function meeting(occupant, need) {
-//     if(need === 0) {
-//         return 'Game On';
-//     }
+function meeting(occupant, need) {
+    if(need === 0) {
+        return 'Game On';
+    }
 
-//     let counter = 0;
-//     let result = [];
-//     for (let i = 0; i < occupant.length; i++) {
-//         let temp = occupant[i][1] - occupant[i][0].length;
-//         if(temp < 0) {
-//             temp = 0;
-//         }
+    let counter = 0;
+    let result = [];
+    for (let i = 0; i < occupant.length; i++) {
+        let temp = occupant[i][1] - occupant[i][0].length;
+        if(temp < 0) {
+            temp = 0;
+        }
 
-//         if(counter + temp >= need) {
-//             temp = need - counter;
-//         }
-//         result[i] = temp;
-//         counter += temp;
+        if(counter + temp >= need) {
+            temp = need - counter;
+        }
+        result[i] = temp;
+        counter += temp;
 
-//         if(counter === need) {
-//             break;
-//         }
-//     }
-//     return counter < need ? 'Not enough!' : result;
-// }
-// console.log(meeting([['XXX', 2], ['XXXXX', 6], ['XXXXXX', 9]], 4));
-// console.log(meeting([['XXX', 1], ['XXXXXX', 6], ['X', 2], ['XXXXXX', 8], ['X', 3], ['XXX', 1]], 5));
-// console.log(meeting([['XX', 2], ['XXXX', 6], ['XXXXX', 4]], 0));
-// console.log(meeting([['XX', 2], ['XXXX', 6], ['XXXXX', 4]], 10));
+        if(counter === need) {
+            break;
+        }
+    }
+    return counter < need ? 'Not enough!' : result;
+}
+console.log(meeting([['XXX', 2], ['XXXXX', 6], ['XXXXXX', 9]], 4));
+console.log(meeting([['XXX', 1], ['XXXXXX', 6], ['X', 2], ['XXXXXX', 8], ['X', 3], ['XXX', 1]], 5));
+console.log(meeting([['XX', 2], ['XXXX', 6], ['XXXXX', 4]], 0));
+console.log(meeting([['XX', 2], ['XXXX', 6], ['XXXXX', 4]], 10));
 
 
 
@@ -71,53 +71,75 @@
 // You may assume that the board passed in is valid in the context of a game of Tic-Tac-Toe.
 
 
-let board = [[1,2,1], [2,2,2], [1,1,0]];
-let newArr = [[board[0][0] * board[0][1] * board[0][2]], 
-              [board[1][0] * board[1][1] * board[1][2]], 
-              [board[2][0] * board[2][1] * board[2][2]], 
-              [board[0][0] * board[1][1] * board[2][2]], 
-              [board[0][0] * board[1][0] * board[2][0]], 
-              [board[2][0] * board[1][1] * board[0][2]], 
-              [board[0][1] * board[1][1] * board[2][1]], 
-              [board[0][2] * board[1][2] * board[2][2]]];
+// let board = [[1,2,1], [2,1,1], [2,1,2]]; // draw
+let board = [[1,2,1], [2,1,1], [2,2,1]]; // x-won
+// let board = [[2,2,1], [2,1,1], [2,1,2]]; // o-won
+// let board = [[1,2,0], [2,1,0], [0,0,0]]; // game isn't finished
 
+let newArr = [board[0][0] * board[0][1] * board[0][2], 
+              board[1][0] * board[1][1] * board[1][2], 
+              board[2][0] * board[2][1] * board[2][2], 
+              board[0][0] * board[1][1] * board[2][2], 
+              board[0][0] * board[1][0] * board[2][0], 
+              board[2][0] * board[1][1] * board[0][2], 
+              board[0][1] * board[1][1] * board[2][1], 
+              board[0][2] * board[1][2] * board[2][2],];  
 
-function ticTactoe (newArr) {
-    for (let i = 0; i < newArr.length; i++) {
-       
-        if (newArr[i][0] = 1) {
-            return "X won";
-        } else
+let result;
 
-        if (newArr[i][0] = 6) {
-            return "O won";
-        } else
-        if (newArr[i][0] = 0) {
-            return "Draw";
-        } else {
-            return 'game is not finished yet'
-        }
+newArr.find(function(item) {
+    console.log(item);
+    if (item === 1) {
+        result = 'X won';
+    } 
+
+    if (item === 8) {
+        result = 'O won';
+    } 
+
+    if (item > 0 && item !== 8 && item !== 1) {
+        result = 'Draw';
     }
-}
+    else {
+        function isZero(item) {
+            return item === 0;
+          }
+        if(newArr.every(isZero)) {
+            result = 'Game is not finished yet';
+        }; 
 
-console.log(ticTactoe(newArr));
-         
-
+    }
     
+      
+})
+
+console.log(result);
 
 
 
-
-
-
-
-
-
-// Калькулятор
+//! Калькулятор
 // Написати функцію – калькулятор. Функція приймає рядок з прикладом, визначає, яка дія необхідна виконати (+ - * /), переводить операнди у числа, вирішує приклад та повертає результат.
 
-// calc(12, 4, '+') //16
-// calc(1, 4, '-') //-3
-// calc(12, 5, '/') //2.4
-// calc(1.2, 3, '*') //3.6
+calc(12, 4, '+') //16
+calc(1, 4, '-') //-3
+calc(12, 5, '/') //2.4
+calc(1.2, 3, '*') //3.6
 
+function calc(a, b, sign) {
+    switch (sign) {
+        case '*':
+          return a * b;
+        case '+':
+          return a + b;
+        case '-':
+          return a - b;
+        case '/':
+          if (b !== 0) {
+            return a / b;
+          } else {
+            return "На ноль делить нельзя";
+          }
+      }
+}
+
+console.log(calc(12, 4, '+'));
