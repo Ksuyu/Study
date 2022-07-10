@@ -43,7 +43,7 @@ console.log(runWithtotal);
 
 
 
-самый медленный спортсмен
+// самый медленный спортсмен
 
  
 const slowestRunner = Math.max.apply(Math, runWithtotal.map(function(item) { //apply передает массив данных в качестве параметров функции
