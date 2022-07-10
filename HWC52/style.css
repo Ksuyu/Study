@@ -1,0 +1,190 @@
+/* Reset styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-collapse: collapse;
+}
+
+/* Calendar */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.table-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  margin: 30px;
+  border: 2px solid rgb(211, 211, 211);
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  color: rgba(37, 54, 89, 0.9);
+}
+
+.months {
+  display: flex;
+  justify-content: space-between;
+  /* height: 60px; */
+
+  margin: 20px 30px;
+  font-size: 16px;
+  color: rgba(37, 54, 89, 0.5);
+  font-size: 16px;
+}
+
+/* Months: checked */
+
+input[type="radio"] {
+  display: none;
+}
+
+label:before {
+  font-size: 18px;
+  font-weight: 700;
+  color: #bf665e;
+}
+
+label:after {
+  font-size: 16px;
+  color: rgba(37, 54, 89, 0.5);
+}
+
+.jan input[type="radio"]:checked + label:before {
+  content: "JANUARY";
+}
+
+.jan input[type="radio"]:not(:checked) + label:after {
+  content: "JUN";
+}
+
+.feb input[type="radio"]:checked + label:before {
+  content: "FEBRUARY";
+}
+
+.feb input[type="radio"]:not(:checked) + label:after {
+  content: "FEB";
+}
+
+.mar input[type="radio"]:checked + label:before {
+  content: "MARCH";
+}
+
+.mar input[type="radio"]:not(:checked) + label:after {
+  content: "MAR";
+}
+.apr input[type="radio"]:checked + label:before {
+  content: "APRIL";
+}
+
+.apr input[type="radio"]:not(:checked) + label:after {
+  content: "APR";
+}
+.may input[type="radio"]:checked + label:before {
+  content: "MAY";
+}
+
+.may input[type="radio"]:not(:checked) + label:after {
+  content: "MAY";
+}
+
+.jun input[type="radio"]:checked + label:before {
+  content: "JUNE";
+}
+
+.jun input[type="radio"]:not(:checked) + label:after {
+  content: "JUN";
+}
+
+.jul input[type="radio"]:checked + label:before {
+  content: "JULY";
+}
+
+.jul input[type="radio"]:not(:checked) + label:after {
+  content: "JUL";
+}
+.aug input[type="radio"]:checked + label:before {
+  content: "AUGUST";
+}
+
+.aug input[type="radio"]:not(:checked) + label:after {
+  content: "AUG";
+}
+.sep input[type="radio"]:checked + label:before {
+  content: "SEPTEMBER";
+}
+
+.sep input[type="radio"]:not(:checked) + label:after {
+  content: "SEP";
+}
+
+.oct input[type="radio"]:checked + label:before {
+  content: "OCTOBER";
+}
+
+.oct input[type="radio"]:not(:checked) + label:after {
+  content: "OCT";
+}
+
+.nov input[type="radio"]:checked + label:before {
+  content: "NOVEMBER";
+}
+
+.nov input[type="radio"]:not(:checked) + label:after {
+  content: "NOV";
+}
+.dec input[type="radio"]:checked + label:before {
+  content: "DECEMBER";
+}
+
+.dec input[type="radio"]:not(:checked) + label:after {
+  content: "DEC";
+}
+
+/* table */
+
+table {
+  margin: 20px 30px;
+}
+
+th,
+td {
+  width: 120px;
+  /* height: 65px; */
+  text-align: center;
+  padding: 15px 0;
+}
+
+td {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* days */
+
+.holiday {
+  color: #bf665e;
+}
+
+.next-month {
+  color: rgba(37, 54, 89, 0.3);
+}
+
+.days input[type="radio"] + label {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.days input[type="radio"]:checked + label {
+  display: inline-block;
+  line-height: 35px;
+  width: 35px;
+  height: 35;
+  border-radius: 8px;
+  background-color: #f27457;
+  color: #fff;
+}
