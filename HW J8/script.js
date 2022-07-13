@@ -7,19 +7,42 @@
 
 
 class Marker {
-    constructor(color, ink) {
+    constructor(color) {
         this.color = color;
-        this.ink = ink;
+        this.ink = 100;
     }
 
     print (phrase) {
-        let letters = phrase.splt;
+        let text = "phrase";
+        let result = " ";
+        for(let i = 0; i < 200; i++) {
+            if (this.ink != 0) {
+                // if (phrase[i] == " ") {
+                //     this.ink += 0.5;
+                //     }
+                this.ink -= 0.5;
+                console.log(this.ink);
+                
+                result += " " + phrase;
+            } 
+            else {
+                console.log("Marker is over");
+                break;
+            }
+            
+        }
+        // result += " ";
+        return result;
 
     }
 }
+        
 
-let marker = new Marker("pink", "50%");
-marker.print("water");
+
+let marker = new Marker("pink");
+console.log (marker.print("hi there"));
+
+
 
 
 // !Коло
@@ -34,6 +57,41 @@ marker.print("water");
 // Продемонструвати роботу властивостей та методів.
 
 
+// class Circle {
+//     constructor(radius) {
+//         this._radius = radius;
+//     }
+
+//     get radius() {
+//         return this._radius;
+//     }
+
+//     set radius(value) {
+//         return this._radius = value;
+//     }
+
+//     get diametr() {
+//         return this._radius *2;
+//     }
+
+//     area () {
+//         return Math.PI * this.radius * this.radius;
+
+//     }
+
+//     length () {
+//         return 2 * Math.PI * this.radius;
+//     }
+// }
+
+// let circle = new Circle(5);
+// console.log(circle.area());
+// console.log(circle.length());
+// console.log(circle.radius);
+// console.log(circle);
+
+
+
 
 
 //! Count IP Addresses
@@ -42,3 +100,6 @@ marker.print("water");
 // All inputs will be valid IPv4 addresses in the form of strings. The last address will always be greater than the first one.
 
 // Examples ipsBetween("10.0.0.0", "10.0.0.50") === 50 ipsBetween("10.0.0.0", "10.0.1.0") === 256 ipsBetween("20.0.0.10", "20.0.1.0") === 246
+
+
+
