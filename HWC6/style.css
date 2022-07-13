@@ -1,0 +1,54 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(12, 34, 59);
+    background-color: #E6EAEE;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.side-menu {
+    width: 80px;
+    height: 480px;
+    background-color: #444D56;
+    border-radius: 16px;
+}
+
+.bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: -20px;
+    width: 400px;
+    height: 500px;
+    background-image: url(./mj.jpg);
+    background-size: contain;
+    border-radius: 16px;
+
+}
+
+.player-icons {
+    height: 160px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.player-description {
+    height: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
