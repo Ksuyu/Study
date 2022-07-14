@@ -5,6 +5,9 @@ const showSlider = new Swiper('.music-player-carousel', {
   slidesPerView: 3,
 
 
+  observer: true,
+observeParents: true,
+
 })
 
 
