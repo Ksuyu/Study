@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Positioning</title>
+  </head>
+  <body>
+    <section class="music-player">
+      <div class="music-player__content-wrapper">
+        <div class="music-player__content">
+          <div class="music-player-carousel">
+            <div class="swiper-wrapper">
+              <!-- card 1 -->
+
+              <div class="swiper-slide music-player-carousel__card">
+                <div class="card1">
+                  <!-- Side menu -->
+
+                  <div class="card1__side-menu">
+                    <img
+                      class="icons"
+                      src="./icons/Shuffle.svg"
+                      alt="shuffle"
+                    />
+                    <img
+                      class="icon-opacity icons"
+                      src="./icons/repeat.svg"
+                      alt="repeat"
+                    />
+                    <img
+                      class="icon-opacity icons"
+                      src="./icons/Export.svg"
+                      alt="export"
+                    />
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 30 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_101_3301)">
+                        <path
+                          class="icon-heart icons"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.9991 30.6557C15.9715 30.6574 15.9437 30.6583 15.9159 30.6583C15.5623 30.6583 15.2231 30.5178 14.9731 30.2678L2.75328 18.048C-0.917918 14.3768 -0.917922 8.42459 2.75328 4.75339C6.40856 1.09811 12.3251 1.08225 16 4.70582C19.6749 1.08236 25.5913 1.09824 29.2466 4.75349C32.9178 8.42469 32.9178 14.3769 29.2466 18.0481L17.0268 30.2679C16.7768 30.5179 16.4376 30.6584 16.084 30.6584C16.0556 30.6584 16.0273 30.6575 15.9991 30.6557Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_101_3301">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <img
+                      class="icon-opacity icons"
+                      src="./icons/plus-circle.svg"
+                      alt="plus"
+                    />
+
+                    <div class="volume">
+                      <img
+                        class="volume-icon icon-opacity icons"
+                        src="./icons/Volume minimal.svg"
+                        alt="volume-max"
+                      />
+
+                      <div class="volume-progress-bar"></div>
+
+                      <img
+                        class="volume-icon icon-opacity icons"
+                        src="./icons/Volume.svg"
+                        alt="volume-min"
+                      />
+                    </div>
+
+                    <img
+                      class="icon-opacity icons"
+                      src="./icons/Settings.svg"
+                      alt="settings"
+                    />
+                  </div>
+
+                  <!-- Main content -->
+
+                  <div class="card1__content">
+                    <div class="player-description">
+                      <h1 class="card1-h1">Thriller</h1>
+                      <p>by <a href="#">Michael Jackson</a></p>
+
+                      <div class="progress-bar">
+                        <p class="time">03:28</p>
+                        <div class="bar"></div>
+                        <p class="time">05:01</p>
+                      </div>
+                    </div>
+
+                    <div class="player-icons">
+                      <div class="wripper-circle">
+                        <img src="./icons/prev.svg" alt="next" />
+                      </div>
+                      <div class="wripper-circle circle-center">
+                        <img class="pause" src="./icons/Pause.svg" alt="next" />
+                      </div>
+                      <div class="wripper-circle">
+                        <img src="./icons/Next.svg" alt="next" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+
+              <div class="swiper-slide music-player-carousel__card">
+                <div class="card2">
+                  <div class="card2__img"></div>
+                  <div class="card2__content">
+                    <div class="card2__content-top">
+                      <div class="card2__content-top-heading">
+                        <h1>Nomza Mazwai</h1>
+                        <p><span>Rapsody ft.</span></p>
+                        <p>in The Town</p>
+                      </div>
+                      <div class="card2__content-top-icons">
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.6599 3C17.0595 3 17.4425 3.15941 17.7241 3.44288L22.884 8.63734C23.4679 9.22507 23.4647 10.1748 22.877 10.7586C22.2892 11.3425 21.3395 11.3393 20.7556 10.7516L18.1628 8.14142V15.6818C18.1628 16.5102 17.4913 17.1818 16.6628 17.1818C15.8344 17.1818 15.1628 16.5102 15.1628 15.6818V8.13552L12.5642 10.7516C11.9804 11.3393 11.0306 11.3425 10.4429 10.7586C9.85515 10.1748 9.85198 9.22507 10.4358 8.63734L15.5957 3.44288C15.8773 3.15941 16.2604 3 16.6599 3Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6.725 14.1396C7.67769 14.1396 8.45 14.8629 8.45 15.755V21.1396C8.45 23.2213 10.2521 24.9089 12.475 24.9089H20.525C22.7479 24.9089 24.55 23.2213 24.55 21.1396V15.755C24.55 14.8629 25.3223 14.1396 26.275 14.1396C27.2277 14.1396 28 14.8629 28 15.755V21.1396C28 25.0056 24.6533 28.1396 20.525 28.1396H12.475C8.34667 28.1396 5 25.0056 5 21.1396V15.755C5 14.8629 5.77231 14.1396 6.725 14.1396Z"
+                            fill="#CDD2D7"
+                          />
+                        </svg>
+
+                        <svg
+                          width="28"
+                          height="28"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9999 1.66669C16.3805 1.66669 16.7281 1.88276 16.8966 2.22406L20.7841 10.0998L29.4778 11.3705C29.8544 11.4256 30.1671 11.6896 30.2844 12.0516C30.4018 12.4136 30.3036 12.8108 30.0309 13.0764L23.7411 19.2027L25.2255 27.8576C25.2898 28.2328 25.1356 28.612 24.8276 28.8357C24.5196 29.0595 24.1113 29.0889 23.7744 28.9118L15.9999 24.8232L8.22532 28.9118C7.8884 29.0889 7.48011 29.0595 7.17213 28.8357C6.86415 28.612 6.70991 28.2328 6.77426 27.8576L8.25868 19.2027L1.9688 13.0764C1.69618 12.8108 1.59791 12.4136 1.71529 12.0516C1.83266 11.6896 2.14534 11.4256 2.5219 11.3705L11.2156 10.0998L15.1032 2.22406C15.2716 1.88276 15.6192 1.66669 15.9999 1.66669ZM15.9999 4.92594L12.7766 11.456C12.631 11.7508 12.3498 11.9553 12.0245 12.0028L4.81494 13.0566L10.0309 18.137C10.2668 18.3667 10.3745 18.6979 10.3188 19.0224L9.08805 26.1984L15.5344 22.8083C15.8258 22.655 16.1739 22.655 16.4653 22.8083L22.9117 26.1984L21.6809 19.0224C21.6253 18.6979 21.7329 18.3667 21.9688 18.137L27.1848 13.0566L19.9752 12.0028C19.6499 11.9553 19.3687 11.7508 19.2232 11.456L15.9999 4.92594Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            d="M12.7766 11.456L15.9999 4.92594L19.2232 11.456C19.3687 11.7508 19.6499 11.9553 19.9752 12.0028L27.1848 13.0566L21.9688 18.137C21.7329 18.3667 21.6253 18.6979 21.6809 19.0224L22.9117 26.1984L16.4653 22.8083C16.1739 22.655 15.8258 22.655 15.5344 22.8083L9.08805 26.1984L10.3188 19.0224C10.3745 18.6979 10.2668 18.3667 10.0309 18.137L4.81494 13.0566L12.0245 12.0028C12.3498 11.9553 12.631 11.7508 12.7766 11.456Z"
+                            fill="#CDD2D7"
+                          />
+                        </svg>
+
+                        <svg
+                          width="26"
+                          height="26"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_101_3301)">
+                            <path
+                              class="icon-heart"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M15.9991 30.6557C15.9715 30.6574 15.9437 30.6583 15.9159 30.6583C15.5623 30.6583 15.2231 30.5178 14.9731 30.2678L2.75328 18.048C-0.917918 14.3768 -0.917922 8.42459 2.75328 4.75339C6.40856 1.09811 12.3251 1.08225 16 4.70582C19.6749 1.08236 25.5913 1.09824 29.2466 4.75349C32.9178 8.42469 32.9178 14.3769 29.2466 18.0481L17.0268 30.2679C16.7768 30.5179 16.4376 30.6584 16.084 30.6584C16.0556 30.6584 16.0273 30.6575 15.9991 30.6557Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_101_3301">
+                              <rect width="32" height="32" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="card2__progress-bar"></div>
+                    <div class="card2__content-footer">
+                      <div class="card2__content-footer-left-icons">
+                        <div class="card2-icons-circle-bg">
+                          <img
+                            class="card2-icons-pause"
+                            src="./icons/Pause.svg"
+                            alt="Pause"
+                          />
+                        </div>
+                        <div class="card2-icons-circle-bg">
+                          <img
+                            class="card2-icons-prev"
+                            src="./icons/prev.svg"
+                            alt="prev"
+                          />
+                        </div>
+                        <div class="card2-icons-circle-bg">
+                          <img
+                            class="card2-icons-next"
+                            src="./icons/Next.svg"
+                            alt="next"
+                          />
+                        </div>
+                      </div>
+                      <div class="card2__content-footer-right-icons">
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11.7966 9.5C8.33662 9.50115 5.5 12.3385 5.5 15.7987C5.5 17.5254 6.20525 19.0986 7.35133 20.2447C7.93711 20.8305 7.93711 21.7802 7.35133 22.366C6.76554 22.9518 5.81579 22.9518 5.23001 22.366C3.54942 20.6854 2.5 18.3599 2.5 15.7987C2.5 10.6809 6.68091 6.5 11.7987 6.5H11.8031V6.50001L21.3377 6.52801C22.1662 6.53044 22.8358 7.20398 22.8333 8.0324C22.8309 8.86083 22.1574 9.53043 21.3289 9.52799L11.7987 9.5C11.798 9.5 11.7973 9.5 11.7966 9.5Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M18.1362 4.831C18.4291 4.5381 18.9039 4.5381 19.1968 4.831L21.8635 7.49766C22.1564 7.79056 22.1564 8.26543 21.8635 8.55833L19.1968 11.225C18.9039 11.5179 18.4291 11.5179 18.1362 11.225C17.8433 10.9321 17.8433 10.4572 18.1362 10.1643L20.2725 8.02799L18.1362 5.89166C17.8433 5.59877 17.8433 5.12389 18.1362 4.831Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M24.6485 9.63398C25.2343 9.04819 26.184 9.04819 26.7698 9.63398C28.4504 11.3146 29.4998 13.64 29.4998 16.2013C29.4998 21.3191 25.3189 25.5 20.2012 25.5L20.1968 25.5L10.6621 25.472C9.83368 25.4695 9.16408 24.796 9.16651 23.9676C9.16894 23.1391 9.84249 22.4695 10.6709 22.472L20.2012 22.5C20.2019 22.5 20.2027 22.5 20.2035 22.5C23.6633 22.4987 26.4998 19.6614 26.4998 16.2013C26.4998 14.4746 25.7946 12.9014 24.6485 11.7553C24.0627 11.1695 24.0627 10.2198 24.6485 9.63398Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M13.8635 20.775C14.1564 21.0679 14.1564 21.5427 13.8635 21.8356L11.7272 23.972L13.8635 26.1083C14.1564 26.4012 14.1564 26.8761 13.8635 27.169C13.5706 27.4619 13.0957 27.4619 12.8028 27.169L10.1362 24.5023C9.84328 24.2094 9.84328 23.7345 10.1362 23.4416L12.8028 20.775C13.0957 20.4821 13.5706 20.4821 13.8635 20.775Z"
+                            fill="#CDD2D7"
+                          />
+                        </svg>
+
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M22.1445 9.50666C21.3036 9.50429 20.5191 9.92264 20.0552 10.6194L11.7761 23.0387C10.75 24.576 9.02103 25.4972 7.17123 25.488L3.99245 25.472C3.16403 25.4678 2.49585 24.7929 2.50002 23.9645C2.50419 23.136 3.17913 22.4679 4.00755 22.472L7.1861 22.488C7.18614 22.488 7.18606 22.488 7.1861 22.488C8.02668 22.4921 8.81266 22.0742 9.27996 21.3746C9.2801 21.3744 9.27982 21.3748 9.27996 21.3746L17.5581 8.95664C18.5822 7.41921 20.3098 6.50118 22.1538 6.50668L28.0055 6.52801C28.8339 6.53103 29.503 7.20505 29.5 8.03347C29.497 8.8619 28.823 9.53101 27.9945 9.52799L22.1445 9.50666C22.1443 9.50666 22.1446 9.50666 22.1445 9.50666Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M24.2728 20.2447C24.8586 19.6589 25.8084 19.6589 26.3942 20.2447L29.0608 22.9114C29.6466 23.4972 29.6466 24.4469 29.0608 25.0327L26.3942 27.6994C25.8084 28.2851 24.8586 28.2851 24.2728 27.6994C23.687 27.1136 23.687 26.1638 24.2728 25.578L25.8788 23.972L24.2728 22.366C23.687 21.7802 23.687 20.8305 24.2728 20.2447Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.2656 6.51069C9.04372 6.50153 10.7157 7.35213 11.7552 8.79312L13.0741 10.6229C13.5586 11.2949 13.4065 12.2324 12.7345 12.7168C12.0624 13.2012 11.1249 13.0492 10.6405 12.3771L9.32216 10.5482C9.32206 10.5481 9.32226 10.5484 9.32216 10.5482C8.84967 9.89353 8.08957 9.50655 7.28128 9.51065C7.28121 9.51065 7.28135 9.51065 7.28128 9.51065L4.00794 9.52799C3.17953 9.53237 2.50441 8.86437 2.50002 8.03595C2.49563 7.20753 3.16364 6.53241 3.99206 6.52803L7.2656 6.51069Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.3744 19.3134C17.0298 18.8066 17.9718 18.9271 18.4786 19.5824L19.9799 21.5237C19.9799 21.5237 19.9799 21.5237 19.9799 21.5237C20.4543 22.1369 21.1882 22.4957 21.9654 22.4934L27.9948 22.472C28.8232 22.4691 29.4971 23.1383 29.5001 23.9667C29.503 24.7951 28.8338 25.4691 28.0054 25.472L21.976 25.4933C20.2681 25.4988 18.6524 24.7109 17.6069 23.359L16.1055 21.4176C15.5987 20.7623 15.7191 19.8202 16.3744 19.3134Z"
+                            fill="#CDD2D7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M24.2728 4.30067C24.8586 3.71488 25.8084 3.71488 26.3942 4.30067L29.0608 6.96733C29.6466 7.55312 29.6466 8.50287 29.0608 9.08865L26.3942 11.7553C25.8084 12.3411 24.8586 12.3411 24.2728 11.7553C23.687 11.1695 23.687 10.2198 24.2728 9.634L25.8788 8.02799L24.2728 6.42199C23.687 5.8362 23.687 4.88645 24.2728 4.30067Z"
+                            fill="#CDD2D7"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 3 -->
+              </div>
+
+              <div class="swiper-slide music-player-carousel__card">
+                <div class="card3">
+                  <div class="card3__top">
+                    <div class="card3__top-img"></div>
+                    <div class="card3__content">
+                      <span>2:37</span>
+                      <div class="card3-heading">
+                        <h1>Half Moon Run</h1>
+                        <p>Full circle</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card3__progress-bar"></div>
+                  <div class="card3__footer">
+                    <div class="card3__footer-left-icons">
+                      <img
+                        class="card3-icon-pause"
+                        src="./icons/Pause.svg"
+                        alt="Pause"
+                      />
+                      <img src="./icons/prev.svg" alt="prev" />
+                      <img src="./icons/Next.svg" alt="" />
+                    </div>
+                    <div class="card3__footer-right-icons">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M22.1445 9.50666C21.3036 9.50429 20.5191 9.92264 20.0552 10.6194L11.7761 23.0387C10.75 24.576 9.02103 25.4972 7.17123 25.488L3.99245 25.472C3.16403 25.4678 2.49585 24.7929 2.50002 23.9645C2.50419 23.136 3.17913 22.4679 4.00755 22.472L7.1861 22.488C7.18614 22.488 7.18606 22.488 7.1861 22.488C8.02668 22.4921 8.81266 22.0742 9.27996 21.3746C9.2801 21.3744 9.27982 21.3748 9.27996 21.3746L17.5581 8.95664C18.5822 7.41921 20.3098 6.50118 22.1538 6.50668L28.0055 6.52801C28.8339 6.53103 29.503 7.20505 29.5 8.03347C29.497 8.8619 28.823 9.53101 27.9945 9.52799L22.1445 9.50666C22.1443 9.50666 22.1446 9.50666 22.1445 9.50666Z"
+                          fill="rgba(0, 0, 0, 0.5)"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M24.2728 20.2447C24.8586 19.6589 25.8084 19.6589 26.3942 20.2447L29.0608 22.9114C29.6466 23.4972 29.6466 24.4469 29.0608 25.0327L26.3942 27.6994C25.8084 28.2851 24.8586 28.2851 24.2728 27.6994C23.687 27.1136 23.687 26.1638 24.2728 25.578L25.8788 23.972L24.2728 22.366C23.687 21.7802 23.687 20.8305 24.2728 20.2447Z"
+                          fill="rgba(0, 0, 0, 0.5)"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.2656 6.51069C9.04372 6.50153 10.7157 7.35213 11.7552 8.79312L13.0741 10.6229C13.5586 11.2949 13.4065 12.2324 12.7345 12.7168C12.0624 13.2012 11.1249 13.0492 10.6405 12.3771L9.32216 10.5482C9.32206 10.5481 9.32226 10.5484 9.32216 10.5482C8.84967 9.89353 8.08957 9.50655 7.28128 9.51065C7.28121 9.51065 7.28135 9.51065 7.28128 9.51065L4.00794 9.52799C3.17953 9.53237 2.50441 8.86437 2.50002 8.03595C2.49563 7.20753 3.16364 6.53241 3.99206 6.52803L7.2656 6.51069Z"
+                          fill="rgba(0, 0, 0, 0.5)"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16.3744 19.3134C17.0298 18.8066 17.9718 18.9271 18.4786 19.5824L19.9799 21.5237C19.9799 21.5237 19.9799 21.5237 19.9799 21.5237C20.4543 22.1369 21.1882 22.4957 21.9654 22.4934L27.9948 22.472C28.8232 22.4691 29.4971 23.1383 29.5001 23.9667C29.503 24.7951 28.8338 25.4691 28.0054 25.472L21.976 25.4933C20.2681 25.4988 18.6524 24.7109 17.6069 23.359L16.1055 21.4176C15.5987 20.7623 15.7191 19.8202 16.3744 19.3134Z"
+                          fill="rgba(0, 0, 0, 0.5)"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M24.2728 4.30067C24.8586 3.71488 25.8084 3.71488 26.3942 4.30067L29.0608 6.96733C29.6466 7.55312 29.6466 8.50287 29.0608 9.08865L26.3942 11.7553C25.8084 12.3411 24.8586 12.3411 24.2728 11.7553C23.687 11.1695 23.687 10.2198 24.2728 9.634L25.8788 8.02799L24.2728 6.42199C23.687 5.8362 23.687 4.88645 24.2728 4.30067Z"
+                          fill="rgba(0, 0, 0, 0.5)"
+                        />
+                      </svg>
+
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16.6599 3C17.0595 3 17.4425 3.15941 17.7241 3.44288L22.884 8.63734C23.4679 9.22507 23.4647 10.1748 22.877 10.7586C22.2892 11.3425 21.3395 11.3393 20.7556 10.7516L18.1628 8.14142V15.6818C18.1628 16.5102 17.4913 17.1818 16.6628 17.1818C15.8344 17.1818 15.1628 16.5102 15.1628 15.6818V8.13552L12.5642 10.7516C11.9804 11.3393 11.0306 11.3425 10.4429 10.7586C9.85515 10.1748 9.85198 9.22507 10.4358 8.63734L15.5957 3.44288C15.8773 3.15941 16.2604 3 16.6599 3Z"
+                          fill="rgba(0, 0, 0, 0.5)"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.725 14.1396C7.67769 14.1396 8.45 14.8629 8.45 15.755V21.1396C8.45 23.2213 10.2521 24.9089 12.475 24.9089H20.525C22.7479 24.9089 24.55 23.2213 24.55 21.1396V15.755C24.55 14.8629 25.3223 14.1396 26.275 14.1396C27.2277 14.1396 28 14.8629 28 15.755V21.1396C28 25.0056 24.6533 28.1396 20.525 28.1396H12.475C8.34667 28.1396 5 25.0056 5 21.1396V15.755C5 14.8629 5.77231 14.1396 6.725 14.1396Z"
+                          fill="rgba(0, 0, 0, 0.5)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 4 -->
+
+              <div class="swiper-slide music-player-carousel__card">
+                <div class="card4">
+                  <div class="card4__top">
+                    <img src="./icons/list.svg" alt="" />
+                    <img
+                      class="card4-icon-volume"
+                      src="./icons/Volume minimal.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="card4__content">
+                    <div class="card4__content-bg"></div>
+
+                    <div class="player-description">
+                      <h1>Age</h1>
+                      <p>by <a href="#">Lianne La Havas</a></p>
+
+                      <div class="progress-bar">
+                        <img
+                          class="card4-icon-pause"
+                          src="./icons/Pause.svg"
+                          alt="pause"
+                        />
+                        <div class="bar"></div>
+                        <p class="time">03:01</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card4__footer">
+                    <img
+                      class="icons"
+                      src="./icons/Shuffle.svg"
+                      alt="Shuffle"
+                    />
+                    <img
+                      class="icon-opacity icons"
+                      src="./icons/repeat.svg"
+                      alt="repeat"
+                    />
+                    <img
+                      class="icon-opacity icons"
+                      src="./icons/plus-circle.svg"
+                      alt="plus"
+                    />
+
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 30 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_101_3301)">
+                        <path
+                          class="icon-heart icons"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.9991 30.6557C15.9715 30.6574 15.9437 30.6583 15.9159 30.6583C15.5623 30.6583 15.2231 30.5178 14.9731 30.2678L2.75328 18.048C-0.917918 14.3768 -0.917922 8.42459 2.75328 4.75339C6.40856 1.09811 12.3251 1.08225 16 4.70582C19.6749 1.08236 25.5913 1.09824 29.2466 4.75349C32.9178 8.42469 32.9178 14.3769 29.2466 18.0481L17.0268 30.2679C16.7768 30.5179 16.4376 30.6584 16.084 30.6584C16.0556 30.6584 16.0273 30.6575 15.9991 30.6557Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_101_3301">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <img
+                      class="icon-opacity icons"
+                      src="./icons/Export.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="music-player-navigation">
+        <div class="music-player-navigation__prev"></div>
+        <div class="music-player-navigation__next"></div>
+      </div>
+
+      <video
+        src="./videos/smoke-background-optimized.mp4"
+        class="music-player__video"
+        autoplay
+        loop
+        muted
+      ></video>
+    </section>
+
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
