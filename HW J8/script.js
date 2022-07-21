@@ -40,14 +40,39 @@
 
 // }
 
-// const m = new Marker(4.5, 'green');
-// console.log(m);
+// const m = new Marker(4, 'green');
+
 // m.print('hello');
 // m.print('hello');
+// m.print('hello');
+
+// // заправка маркера
+
+// class FilledMarker extends Marker {
+//   fill(ink) {
+//     if (ink > 100) {
+//       ink = 100;
+//     } else {
+//       this._ink += ink;
+//     }
+//   }
+// }
+
+// let filledM = new FilledMarker(4, 'red');
+
+// filledM.fill(5);
+
+// console.log(filledM);
+
+// filledM.print('hello');
+// filledM.print('hello');
+// filledM.print('hello');
+// filledM.print('hello');
+
 
 
 //! Morse
-// You have to write a simple Morse code decoder. While the Morse code is now mostly superceded by voice and digital data communication channels, it still has its use in some applications around the world.
+// You have to write a simple Morse code decoder.
 
 // The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive, traditionally capital letters are used. When the message is written in Morse code, a single space is used to separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in Morse code is ···· · −·−− ·−−− ··− −·· ·.
 
@@ -60,6 +85,16 @@
 // Examples:
 
 // decodeMorse('.... . -.-- .--- ..- -.. .') //should return "HEY JUDE"
+
+
+
+
+
+
+
+
+
+
 
 //! Клікер
 // Створити html-сторінку з клікером.
