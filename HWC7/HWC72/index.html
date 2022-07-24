@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <img class="background top" src="./Images/bg1.png" alt="background">
+    <img class="background bottom" src="./Images/bg2.png" alt="background">
+    
+    <div class="dashboard">
+
+<!-- left navigation -->
+
+      <nav>
+        <p class="logo">Archi<span>Tech</span></p>
+
+        <ul>
+          <li><img src="./Icons/other.svg" alt="dashboard"><span>Dashboard</span></li>
+          <li><img src="./Icons/folder.svg" alt="projects">Projects</li>
+          <li><img src="./Icons//work.svg" alt="tenants">Tenants</li>
+          <li><img src="./Icons/employees.svg" alt="employees">Employees</li>
+          <li><img src="./Icons/reports.svg" alt="reports">Reports</li>
+          <li><img src="./Icons/date.svg" alt="meetings">Meetings</li>
+          
+        </ul>
+        <div class="profile">
+          <img class="avatar" src="./Images/avatar.jpg" alt="avatar">
+          <p class="name">Eren Yeger</p>
+          <p class="job-title">Project Manager</p>
+          <div class="profile__icons">
+            <img src="./Icons/setsettings.svg" alt="settings" class="icons-border">
+            <img src="./Icons/log outexit.svg" alt="log-out" class="icons-border">
+          </div>
+        </div>
+      </nav>
+
+<!-- main content -->
+
+      <main>
+
+        <header>
+          <h1>Dashboard</h1>
+          <div class="header__nav">
+
+            <form role="search" class="search">
+              <a href="#" class="search-icon">
+                <img src="./Icons/search.svg" alt="search">
+              </a>
+              <input type="search" placeholder="Search...">
+            </form>
+
+            <img src="./Icons/chat.svg" alt="chat" class="header-icons icons-border">
+            <img src="./Icons/notif.svg" alt="notification" class="header-icons icons-border">
+
+            <div class="button">
+              <img src="./Icons/plus.svg" alt="plus">
+              Create Project
+            </div>
+          </div>
+          
+        </header>
+
+        <section class="chart">
+          <div class="chart__visual">
+            <h2>Property Overview</h2>
+            <div class="table">
+              
+              <div class="table__row">
+                <p>60K</p>
+                <div class="row-line"></div>
+              </div>
+
+              <div class="table__row">
+                <p>50K</p>
+                <div class="row-line"></div>
+              </div>
+
+              <div class="table__row">
+                <p>40K</p>
+                <div class="row-line"></div>
+              </div>
+
+              <div class="table__row">
+                <p>30K</p>
+                <div class="row-line"></div>
+              </div>
+
+              <div class="table__row">
+                <p>20K</p>
+                <div class="row-line"></div>
+              </div>
+
+              <div class="table__row">
+                <p>10K</p>
+                <div class="row-line"></div>
+              </div>
+
+              <div class="table__footer">
+                <p>Jan</p>
+                <p>Feb</p>
+                <p>Mar</p>
+                <p>Apr</p>
+                <p>May</p>
+                <p>Jun</p>
+                <p>Jul</p>
+                <p>Aug</p>
+                <p>Sep</p>
+                <p>Oct</p>
+                <p>Nov</p>
+                <p>Dec</p>
+              </div>
+              
+                <img class="chart-line-red" src="./Icons/chart-red.svg" alt="red-line">
+                <img class="chart-line-yellow" src="./Icons/chart-yelllow.svg" alt="yelllow-line">
+
+                <div class="pointer">
+                  <div class="pointer-caption">
+                    <img src="./Icons/pointer-caption.svg" alt="caption">
+                    <p>Total Sales</p>
+                    <p><span>$46,230</span></p>
+
+                  </div>
+                  <img src="./Icons/point.svg" alt="point" class="pointer-line">
+
+                </div>
+            </div>
+          </div>
+
+          <div class="chart__numbers">
+            <div class="chart__numbers-card">
+              <img class="numbers-card-icon" src="./Icons/chart.svg" alt="chart">
+              <div class="numbers-card-caption">
+                <p>Revenue</p>
+                <p><span>$1.250.031</span></p>
+              </div>
+            </div>
+
+              <div class="chart__numbers-card">
+                <img class="numbers-card-icon blue" src="./Icons/folder — копия.svg" alt="chart">
+                <div class="numbers-card-caption">
+                  <p>Revenue</p>
+                  <p><span>543</span></p>
+                </div>
+              </div>
+
+                <div class="chart__numbers-card">
+                  <img class="numbers-card-icon green" src="./Icons/chartchart-green.svg" alt="chart">
+                  <div class="numbers-card-caption">
+                    <p>Revenue</p>
+                    <p><span>38</span></p>
+                  </div>
+                </div>
+            
+          </div>
+        </section>
+
+        <section class="map"></section>
+      </main>
+  
+    </div>
+  </div>
+
+
+  
+</body>
+</html>
