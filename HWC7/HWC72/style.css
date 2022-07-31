@@ -55,6 +55,7 @@ body {
   display: flex;
   border-radius: 16px;
   background-color: white;
+  margin-top: auto;
 }
 
 nav {

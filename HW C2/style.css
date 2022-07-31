@@ -3,13 +3,27 @@ td{
     height: 60px;
     border: 1px solid rgb(36, 5, 5);
     background-color: rgb(35, 14, 53);
+    transition: background-color .2s, opasity .5s;
+}
+
+td:hover {
+  background-color: rgb(255, 0, 0);
+  opacity: .8;
 }
 
 .odd td:nth-child(2n + 1){
     background-color: rgb(206, 206, 206);
+    transition: background-color .2s, opasity .5s;
 }
 .even td:nth-child(2n){
     background-color: rgb(206, 206, 206);
+    transition: background-color .2s, opasity .5s;
+}
+
+:is(.odd td:nth-child(2n + 1), .even td:nth-child(2n)):hover {
+  background-color: rgb(255, 255, 0);
+  opacity: .8;
+
 }
 
 .king{
@@ -23,10 +37,13 @@ td{
 
 .black.king{
     border-bottom-color: rgb(62, 67, 77);
+    animation: changeColor 1.5s infinite ease-out alternate;
+
 }
 
 .white.king{
     border-bottom-color: white;
+
 }
 
 .king::before{
@@ -36,11 +53,13 @@ td{
     display: block;
     position: relative;
     top: -25px;
-    left: -10px;
+    left: -7px;
 }
 
 .black.king::before{
     color: rgb(62, 67, 77);
+    animation: changeColor 1.5s infinite ease-out alternate;
+
 }
 
 .white.king::before{
@@ -56,14 +75,18 @@ td{
     top: -40px;
     left: -15px;
     border-radius: 12px;
+    
 }
 
 .black.king::after{
     background-color: rgb(62, 67, 77);
+    animation: changeColor 1.5s infinite ease-out alternate;
+
 }
 
 .white.king::after{
     background-color: white;
+    
 }
 
 /* queen */
@@ -79,10 +102,12 @@ td{
 
 .black.queen{
     border-bottom-color: rgb(62, 67, 77);
+    animation: queen 2s ease-in-out infinite alternate;
 }
 
 .white.queen{
     border-bottom-color: white;
+    transition: border-bottom-color 0.5s;
 }
 
 .queen::before{
@@ -98,10 +123,14 @@ td{
 
 .black.queen::before{
     color: rgb(62, 67, 77);
+    animation: knightWhite 2s infinite alternate;
+
 }
 
 .white.queen::before{
     color: white;
+    transition: color 0.5s;
+    
 }
 
 .queen::after{
@@ -120,11 +149,19 @@ td{
 .black.queen::after{
     background-color: transparent;
     color: rgb(62, 67, 77);
+    
 }
 
 .white.queen::after{
     background-color: transparent;
     color: white;
+    transition: color 0.5s;
+
+}
+
+:is(.hover, .white.queen::after, .white.queen::before):hover {
+  border-bottom-color: brown;
+  color: brown;
 }
 
 /* bishop */
@@ -140,6 +177,12 @@ td{
 
 .black.bishop{
     border-bottom-color: rgb(62, 67, 77);
+
+}
+
+.black.first {
+  animation: bishop 2s ease-in-out infinite alternate;
+
 }
 
 .white.bishop{
@@ -184,6 +227,8 @@ td{
 .white.bishop::after{
     background-color: transparent;
     color: white;
+    animation: changeColor 1.5s infinite ease-out alternate;
+
 }
 
 
@@ -196,6 +241,7 @@ td{
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 40px solid;
+    
 }
 
 .black.knight{
@@ -204,6 +250,9 @@ td{
 
 .white.knight{
     border-bottom-color: white;
+    animation: knightWhite 2s infinite alternate;
+
+
 }
 
 .knight::before{
@@ -224,6 +273,8 @@ td{
 
 .white.knight::before{
     color: white;
+    animation: knightWhite 2s infinite alternate;
+
 }
 
 .knight::after{
@@ -238,6 +289,7 @@ td{
     left: -20px;
     
     
+    
 }
 
 .black.knight::after{
@@ -248,6 +300,8 @@ td{
 .white.knight::after{
     background-color: transparent;
     color: white;
+    animation: knightWhite 2s infinite alternate;
+
 }
 
 
@@ -260,7 +314,11 @@ td{
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-bottom: 40px solid;
+    animation: rook 5s infinite linear alternate;
+
 }
+
+
 
 .black.rook{
     border-bottom-color: rgb(62, 67, 77);
@@ -301,12 +359,18 @@ td{
     border-bottom: 35px solid;
 }
 
+
+
 .black.pawn{
     border-bottom-color: rgb(62, 67, 77);
+    animation: pawnsBlack 1.5s infinite ease-out;
+
 }
 
 .white.pawn{
     border-bottom-color: white;
+    animation: pawnsWhite 2.5s infinite;
+
 }
 
 .pawn::before{
@@ -337,8 +401,6 @@ td{
     border-radius: 4px;
     bottom: 6px;
     left: -8px;
-    
-    
 }
 
 .black.pawn::after{
@@ -349,4 +411,82 @@ td{
 .white.pawn::after{
     background-color: transparent;
     color: white;
+}
+
+
+/* Animation */
+
+@keyframes rook {
+  from {transform:rotate(360deg);}
+  to {transform:rotate(0deg);}
+}
+
+@keyframes knightWhite {
+  from {}
+  to {
+    color: rgb(117, 21, 107);
+    border-bottom-color: rgb(117, 21, 107);
+  }
+}
+
+@keyframes changeColor {
+  from {}
+  to {
+    color: rgb(104, 227, 255);
+    border-bottom-color: rgb(104, 227, 255);
+  }
+}
+
+@keyframes pawnsBlack {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    transform: translate(0, 150%) scale(1.5);
+    
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+    
+  }
+}
+
+@keyframes pawnsWhite {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    transform: translate(0, -250%) scale(1.5);
+    opacity: 1;
+    
+    border-radius: 80%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes queen {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-310%, 0);
+  }
+}
+
+@keyframes bishop {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(310%, 0);
+  }
 }
