@@ -22,6 +22,7 @@ let timerID;
 
 buttonStart.onclick = function () {
   console.log('btnStart');
+  
   timerID = 0;
   timerID = setInterval(function () {
 
@@ -83,10 +84,18 @@ buttonPause.onclick = function () {
 
 //Интервал
 
+
+
 buttonCircle.onclick = function () {
   console.log('btnCircle');
+
+  const container = document.querySelector('.circles-paragraph');
+  
   const newCircle = document.createElement('div');
-  newCircle.innerText = time;
+  minutes.innerText = "0" + 0;
+  newCircle.innerText = `${minutes.innerText}:${seconds.innerText}.${milisec.innerText}`;
+
+  container.append(newCircle);
 }
 
 

@@ -39,7 +39,7 @@ h1 {
 .circles {
   display: flex;
   flex-direction: column;
-  width: 100px;
+  width: 200px;
   border: 1px solid black;
 
 }
@@ -50,8 +50,13 @@ h1 {
 }
 .circles-paragraph {
   display: flex;
-  margin: auto;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+  max-height: 200px;
+  width: 185px;
+
+  overflow-y: scroll;
 
 }
 .container__buttons {
@@ -68,4 +73,12 @@ h1 {
 button {
   width: 90px;
   height: 35px;
+}
+
+button:hover {
+  opacity: 60%;
+}
+
+.hide {
+  display: none;
 }
