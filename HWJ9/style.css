@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
 }
@@ -17,13 +16,11 @@ h1 {
   flex-direction: column;
   gap: 20px;
   margin: 30px;
-
 }
 
 .container__main {
   display: flex;
   gap: 20px;
-
 }
 .time {
   display: flex;
@@ -34,14 +31,12 @@ h1 {
   padding: 30px;
   font-size: 40px;
   font-weight: 500;
-
 }
 .circles {
   display: flex;
   flex-direction: column;
   width: 200px;
   border: 1px solid black;
-
 }
 .circles-title {
   padding: 15px 10px;
@@ -57,7 +52,6 @@ h1 {
   width: 185px;
 
   overflow-y: scroll;
-
 }
 .container__buttons {
   display: flex;
