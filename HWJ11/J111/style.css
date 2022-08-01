@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url(./fonts/digital-7-italic.ttf) format('woff');
+
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Digital-7';
+  letter-spacing: 2px;
+  color: yellow;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 400px;
+  margin: 50px;
+  padding: 50px;
+  background-color: black;
+}
+
+.time {
+  display: flex;
+  font-size: 120px;
+  
+}
+
+.leap-second {
+  margin-left: auto;
+}
+
+.hide {
+  display: none;
+}
