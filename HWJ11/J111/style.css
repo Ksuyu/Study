@@ -17,8 +17,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 400px;
+  width: 360px;
   margin: 50px;
   padding: 50px;
   background-color: black;
@@ -30,10 +29,4 @@ body {
   
 }
 
-.leap-second {
-  margin-left: auto;
-}
 
-.hide {
-  display: none;
-}
