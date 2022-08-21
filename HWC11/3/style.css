@@ -1,7 +1,7 @@
 
 body {
   display: grid;
-  grid-template: 200px calc(400px + 400px/3 * 2) / 10% 800px 1fr;
+  grid-template: 50px 100vh / repeat(4, 25%);
 }
 
 body > * {
@@ -12,21 +12,20 @@ body > * {
   align-content: center;
 }
 
-.menu {
+header {
   background-color: pink;
-  grid-row: span 2;
+  grid-column: span 2;
 }
 
-.menu-right {
+.left-content, .right-content {
   background-color: rgb(146, 207, 250);
+  grid-row: span 2;
 }
 
 main {
   background-color: rgb(250, 250, 180);
-  grid-row: span 2;
 }
 
-.right-content {
+.left-center-content, .right-center-content {
   background-color: rgb(253, 220, 158);
 }
-
