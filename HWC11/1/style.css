@@ -1,0 +1,36 @@
+
+body {
+  display: grid;
+  grid-template: repeat(2, 200px) 300vh 100px / 25% 50% 25%;
+}
+
+body > * {
+  border: 1px solid black;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+header {
+  background-color: pink;
+  grid-column: span 3;
+}
+
+.menu-left, .menu-right {
+  background-color: rgb(146, 207, 250);
+}
+
+main {
+  background-color: rgb(250, 250, 180);
+  grid-row: span 2;
+}
+
+.left-content, .right-content {
+  background-color: rgb(253, 220, 158);
+  grid-row: span 2;
+}
+
+footer {
+  background-color: violet;
+}
