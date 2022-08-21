@@ -36,6 +36,10 @@
     margin-left: -80px;
   }
 
+  .search-form {
+    width: 384px;
+  }
+
   .search-form a {
     border-left: none;
   }
