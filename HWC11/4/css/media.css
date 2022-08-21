@@ -1,13 +1,13 @@
 @media (max-width: 1439px) {
   .container {
-  width: 100%;
+    width: 100%;
   }
 }
 
 @media (max-width: 425px) {
-
-  .header__info-left, .header__info-right {
-  display: none;
+  .header__info-left,
+  .header__info-right {
+    display: none;
   }
 
   .header__info-center {
@@ -19,7 +19,10 @@
     height: 100px;
   }
 
-  .burger-menu, .user-account, .scroll-tabs {
+  .burger-menu,
+  .user-account,
+  .scroll-tabs,
+  .block-mobile {
     display: block !important;
   }
 
@@ -44,7 +47,7 @@
   .header__logo-icons::before {
     width: 12px;
     height: 12px;
-    
+
     right: -5px;
     top: -3px;
   }
@@ -106,7 +109,7 @@
     width: 150px;
     height: 150px;
   }
-  
+
   .button-row {
     flex-direction: column;
   }
@@ -137,8 +140,7 @@
   .week .card-wrapper {
     flex-wrap: wrap;
   }
- 
- 
+
   /* <!-- Shop by Brands --> */
 
   .brands .card-wrapper {
@@ -152,8 +154,66 @@
   .recipes .card-wrapper {
     flex-wrap: wrap;
     gap: 40px;
-
   }
 
+  .footer__content-top {
+    flex-wrap: wrap;
+  }
 
+  .footer__content-top-left-menu {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .footer-menu-column li {
+    display: none;
+  }
+
+  .socials {
+    /* gap: 100px; */
+  }
+
+  .socials-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer__content-bottom {
+    text-align: center;
+  }
+
+  .email-form input {
+    width: 255px;
+  }
+
+  .email-form {
+    gap: 10px;
+  }
+
+  .footer ::before {
+    top: 520px;
+  }
+
+  .footer__content-bottom {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .block-green {
+    width: 60px;
+    top: -5px;
+  }
+
+  .blocks-left {
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+
+  .blocks-right {
+    position: absolute;
+    bottom: -45px;
+    right: 8px;
+  }
 }
