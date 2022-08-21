@@ -1,255 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
-  <title>Plant</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/reset.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__info">
-        <div class="header__info-left">
-          <img src="./icons/telephone-call.png" alt="phone">
-          <p>(833) 407-0747</p>
-        </div>
-        <div class="header__info-center">
-          <p>Get an extra <span>5% off</span> every order when you become an XVIP member</p>
-          <div class="header__info-button-more">Learn more</div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Plant</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <div class="header__info-left">
+            <img src="./icons/telephone-call.png" alt="phone" />
+            <p>(833) 407-0747</p>
+          </div>
+          <div class="header__info-center">
+            <p>
+              Get an extra <span>5% off</span> every order when you become an
+              XVIP member
+            </p>
+            <div class="header__info-button-more">Learn more</div>
+          </div>
           <ul class="header__info-right">
             <li><span>Help</span></li>
             <li><span>I</span></li>
             <li><span>Find a store</span></li>
             <li><span>I</span></li>
-            <li><div class="header__info-right-country"></div>Select your country
-            <img src="./icons/arrow-down-filled.svg" alt="arrow-down"></li>
+            <li>
+              <div class="header__info-right-country"></div>
+              Select your country
+              <img src="./icons/arrow-down-filled.svg" alt="arrow-down" />
+            </li>
           </ul>
-        
-      </div>
-      <div class="header__logo">
-        <img src="./icons/logo.png" alt="logo">
-        <form role="search" class="search">
-          <input type="search" placeholder="Search for products, brand, etc...">
-          <a href="#" class="search-icon">
-            <img src="./icons/search.svg" alt="search">
-          </a>
-        </form>
-        <div class="header__logo-icons">
-          <div class="header__logo-icons-account">
-            <p>Account</p>
-            <img src="./icons/arrow-down.svg" alt="arrow">
+        </div>
+        <div class="header__logo">
+          <img class="burger-menu" src="./icons/burger-menu.svg" alt="burger-menu">
+          <img class="logo" src="./icons/logo.png" alt="logo" />
+          <form class="search-form" role="search" class="search">
+            <input
+              type="search"
+              placeholder="Search for products, brand, etc..."
+            />
+            <a href="#" class="search-icon">
+              <img src="./icons/search.svg" alt="search" />
+            </a>
+          </form>
+          <div class="header__logo-icons">
+            <div class="header__logo-icons-account">
+              <p>Account</p>
+              <img src="./icons/arrow-down.svg" alt="arrow" />
+            </div>
+            <img class="user-account" src="./icons/account.png" alt="user">
+            <img src="./icons/heart.png" alt="like" />
+            <img src="./icons/trolley-cart.png" alt="trolley-cart" />
           </div>
-          <img src="./icons/heart.png" alt="like">
-          <img src="./icons/trolley-cart.png" alt="trolley-cart">
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li>Sale</li>
+            <li>Just Added</li>
+            <li>Groceries</li>
+            <li>Dairy & Eggs</li>
+            <li>Meat</li>
+            <li>Beverages</li>
+            <li>Wellness</li>
+            <li>Occasions</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+
+    <section class="main">
+      <div class="container">
+        <div class="main__content">
+          <p>
+            The largest selection of vegan products online
+            <span class="green">shop our newest products</span>
+          </p>
+          <img
+            class="main__image"
+            src="./images/pic.png
+        "
+            alt="image"
+          />
+          <img class="scroll-tabs" src="./icons/scroll tabs.svg" alt="scroll tabs">
         </div>
       </div>
-      <nav class="header__nav">
-        <ul>
-          <li>Sale</li>
-          <li>Just Added</li>
-          <li>Groceries</li>
-          <li>Dairy & Eggs</li>
-          <li>Meat</li>
-          <li>Beverages</li>
-          <li>Wellness</li>
-          <li>Occasions</li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </section>
 
-  <section class="main">
-    <div class="container">
-      <div class="main__content">
-        <p>The largest selection of vegan products online <span class="green">shop our newest products</span></p>
-        <img class="main__image" src="./images/pic.png
-        " alt="image">
-      </div>
-    </div>
-  </section>
+    <!-- Shop by Category -->
 
-  <section class="categories">
-    <div class="container">
-      <div class="categories__content">
-        <h2>Shop by Category</h2>
-        <div class="card-wrapper">
-          <div class="categories__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <p>Meat & Seafood</p>
+    <section class="categories">
+      <div class="container">
+        <div class="categories__content">
+          <h2>Shop by Category</h2>
+          <div class="card-wrapper">
+            <div class="categories__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <p>Meat & Seafood</p>
+            </div>
+
+            <div class="categories__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <p>Chocolate</p>
+            </div>
+
+            <div class="categories__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <p>Cheese</p>
+            </div>
+
+            <div class="categories__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <p>Juices</p>
+            </div>
+
+            <div class="categories__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <p>Dairy & Eggs</p>
+            </div>
+
+            <div class="categories__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <p>Snacks</p>
+            </div>
+
+            <div class="categories__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <p>Baking</p>
+            </div>
           </div>
-          
-          <div class="categories__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <p>Chocolate</p>
-          </div>
-  
-          <div class="categories__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <p>Cheese</p>
-          </div>
-  
-          <div class="categories__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <p>Juices</p>
-          </div>
-  
-          <div class="categories__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <p>Dairy & Eggs</p>
-          </div>
-  
-          <div class="categories__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <p>Snacks</p>
-          </div>
-  
-          <div class="categories__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <p>Baking</p>
-          </div>
-          
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="favorites">
-    <div class="container">
-      <div class="favorites__content">
-        <h2>Shop PlantX Favorites</h2>
-        <div class="card-wrapper">
-          
-          <div class="favorites__content-card">
-            <img class="pic" src="./images/pic.png" alt="pic">
-            <div class="favorites__content-card-description">
-              <div class="card-description-rating">
-                <img src="./icons/stars-rating.png" alt="rating">
-                5 Reviews
-              </div>
-              <p>Ami - Plant-based Cat Food,
-                264.55oz</p>
-              <div class="price-row">
-                <div class="price"><span class="hide">from</span> $80.99</div>
-                <img src="./icons/heart.png" alt="like">
-              </div>
-              <div class="button-row">
-                <div class="qty">
-                  <img src="./icons/minus.svg" alt="minus">
-                  1
-                  <img src="./icons/plus.svg" alt="plus">
-                </div>
-                <div class="button-add-to-card">ADD TO CART</div>
-              </div>
+    <!-- Shop PlantX Favorites -->
+
+    <section class="favorites">
+      <div class="container">
+        <div class="favorites__content">
+          <div class="heading-wrapper">
+            <h2>Shop PlantX Favorites</h2>
+            <div class="more-link">
+              SEE MORE
+              <img src="./icons/arrow-right.svg" alt="arrow-right" />
             </div>
           </div>
-
-          <div class="favorites__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <div class="favorites__content-card-description">
-              <div class="card-description-rating transparent">
-                <img src="./icons/stars-rating.png" alt="rating">
-                5 Reviews
-              </div>
-              <p>Banza - Chickpea Pasta
-                Spaghetti 8oz</p>
-              <div class="price-row">
-                <div class="price"><span class="hide">from</span> $4.89</div>
-                <img src="./icons/heart.png" alt="like">
-              </div>
-              <div class="button-row">
-                <div class="qty">
-                  <img src="./icons/minus.svg" alt="minus">
-                  1
-                  <img src="./icons/plus.svg" alt="plus">
+          <div class="card-wrapper">
+            <div class="favorites__content-card">
+              <img class="pic" src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
                 </div>
-                <div class="button-add-to-card">ADD TO CART</div>
+                <p>Ami - Plant-based Cat Food, 264.55oz</p>
+                <div class="price-row">
+                  <div class="price"><span class="hide">from</span> $80.99</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <div class="qty">
+                    <img src="./icons/minus.svg" alt="minus" />
+                    1
+                    <img src="./icons/plus.svg" alt="plus" />
+                  </div>
+                  <div class="button-add-to-card">ADD TO CART</div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="favorites__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <div class="favorites__content-card-description">
-              <div class="card-description-rating transparent">
-                <img src="./icons/stars-rating.png" alt="rating">
-                5 Reviews
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Banza - Chickpea Pasta Spaghetti 8oz</p>
+                <div class="price-row">
+                  <div class="price"><span class="hide">from</span> $4.89</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <div class="qty">
+                    <img src="./icons/minus.svg" alt="minus" />
+                    1
+                    <img src="./icons/plus.svg" alt="plus" />
+                  </div>
+                  <div class="button-add-to-card">ADD TO CART</div>
+                </div>
               </div>
-              <p>Redmond - Real Salt</p>
-              <div class="price-row">
-                <div class="price"><span>from</span> $6.29</div>
-                <img src="./icons/heart.png" alt="like">
-              </div>
-              <div class="button-row">
-                <!-- <div class="qty hide">
+            </div>
+
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Redmond - Real Salt</p>
+                <div class="price-row">
+                  <div class="price"><span>from</span> $6.29</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <!-- <div class="qty hide">
                   <img src="./icons/minus.svg" alt="minus">
                   1
                   <img src="./icons/plus.svg" alt="plus">
                 </div> -->
-                <div class="button-add-to-card button-wide">SELECT OPTIONS</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="favorites__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <div class="favorites__content-card-description">
-              <div class="card-description-rating transparent">
-                <img src="./icons/stars-rating.png" alt="rating">
-                5 Reviews
-              </div>
-              <p>Nutpods - French Vanilla
-                Creamer Unsweetened, 11.2 fl oz</p>
-              <div class="price-row">
-                <div class="price"><span class="hide">from</span> $3.69</div>
-                <img src="./icons/heart.png" alt="like">
-              </div>
-              <div class="button-row">
-                <div class="qty">
-                  <img src="./icons/minus.svg" alt="minus">
-                  1
-                  <img src="./icons/plus.svg" alt="plus">
+                  <div class="button-add-to-card button-wide">
+                    SELECT OPTIONS
+                  </div>
                 </div>
-                <div class="button-add-to-card">ADD TO CART</div>
               </div>
             </div>
-          </div>
 
-          <div class="favorites__content-card">
-            <img src="./images/pic.png" alt="pic">
-            <div class="favorites__content-card-description">
-              <div class="card-description-rating transparent">
-                <img src="./icons/stars-rating.png" alt="rating">
-                5 Reviews
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Nutpods - French Vanilla Creamer Unsweetened, 11.2 fl oz</p>
+                <div class="price-row">
+                  <div class="price"><span class="hide">from</span> $3.69</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <div class="qty">
+                    <img src="./icons/minus.svg" alt="minus" />
+                    1
+                    <img src="./icons/plus.svg" alt="plus" />
+                  </div>
+                  <div class="button-add-to-card">ADD TO CART</div>
+                </div>
               </div>
-              <p>Minor Figures - Organic Oat
-                Milk</p>
+            </div>
+
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Minor Figures - Organic Oat Milk</p>
                 <div class="price-row">
                   <div class="price"><span class="hide">from</span> $4.30</div>
-                <img src="./icons/heart.png" alt="like">
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <div class="qty">
+                    <img src="./icons/minus.svg" alt="minus" />
+                    1
+                    <img src="./icons/plus.svg" alt="plus" />
+                  </div>
+                  <div class="button-add-to-card">ADD TO CART</div>
+                </div>
               </div>
-              <div class="button-row">
-                <div class="qty">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deals of the week -->
+
+    <section class="week">
+      <div class="container">
+        <div class="week__content">
+          <div class="heading-wrapper">
+            <h2>Deals of the week</h2>
+            <div class="more-link">
+              SEE MORE
+              <img src="./icons/arrow-right.svg" alt="arrow-right" />
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Thid Dip is Nuts - Organic Dips, 7oz</p>
+                <div class="price-row">
+                  <div class="price"><span>$5.99</span>$5.39</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <!-- <div class="qty hide">
                   <img src="./icons/minus.svg" alt="minus">
                   1
                   <img src="./icons/plus.svg" alt="plus">
+                </div> -->
+                  <div class="button-add-to-card button-wide">
+                    SELECT OPTIONS
+                  </div>
                 </div>
-                <div class="button-add-to-card">ADD TO CART</div>
+              </div>
+            </div>
+
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Bitchin Sauce - Chipotle Sauce, 8oz</p>
+                <div class="price-row">
+                  <div class="price"><span>$6.69</span>$6.02</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <div class="qty">
+                    <img src="./icons/minus.svg" alt="minus" />
+                    1
+                    <img src="./icons/plus.svg" alt="plus" />
+                  </div>
+                  <div class="button-add-to-card">ADD TO CART</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Mother Raw - Spicy Vegan Queso Dip, 8.8oz</p>
+                <div class="price-row">
+                  <div class="price"><span>$6.79</span> $6.11</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <div class="qty hide">
+                    <img src="./icons/minus.svg" alt="minus" />
+                    1
+                    <img src="./icons/plus.svg" alt="plus" />
+                  </div>
+                  <div class="button-add-to-card">ADD TO CART</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Hope - Thai Coconut Curry Hummus, 8oz</p>
+                <div class="price-row">
+                  <div class="price"><span>$4.79</span> $4.31</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <div class="qty">
+                    <img src="./icons/minus.svg" alt="minus" />
+                    1
+                    <img src="./icons/plus.svg" alt="plus" />
+                  </div>
+                  <div class="button-add-to-card">ADD TO CART</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorites__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <div class="favorites__content-card-description">
+                <div class="card-description-rating transparent">
+                  <img src="./icons/stars-rating.png" alt="rating" />
+                  5 Reviews
+                </div>
+                <p>Salsa God - Medium Heat Salsas, 16oz</p>
+                <div class="price-row">
+                  <div class="price"><span>$5.29</span> $4.76</div>
+                  <img src="./icons/heart.png" alt="like" />
+                </div>
+                <div class="button-row">
+                  <!-- <div class="qty">
+                  <img src="./icons/minus.svg" alt="minus">
+                  1
+                  <img src="./icons/plus.svg" alt="plus">
+                </div> -->
+                  <div class="button-add-to-card button-wide">
+                    SELECT OPTIONS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop by Brands -->
+
+    <section class="brands">
+      <div class="container">
+        <div class="brands__content">
+          <div class="heading-wrapper">
+            <h2>Shop by Brands</h2>
+            <div class="more-link">
+              SEE ALL BRANDS
+              <img src="./icons/arrow-right.svg" alt="arrow-right" />
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <img src="./icons/arrow-left.svg" alt="arrow-left" />
+            <img src="./images/pic.png" alt="brand" class="brands-card" />
+            <img src="./images/pic.png" alt="brand" class="brands-card" />
+            <img src="./images/pic.png" alt="brand" class="brands-card" />
+            <img src="./images/pic.png" alt="brand" class="brands-card" />
+            <img src="./images/pic.png" alt="brand" class="brands-card" />
+            <img src="./images/pic.png" alt="brand" class="brands-card" />
+            <img
+              class="brands-arrow-right"
+              src="./icons/arrow-right.svg"
+              alt="arrow-right"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Favorite Recipes -->
+
+    <section class="recipes">
+      <div class="container">
+        <div class="recipes__content">
+          <div class="heading-wrapper">
+            <h2>Our Favorite Recipes</h2>
+            <div class="more-link">
+              SEE ALL RECIPES
+              <img src="./icons/arrow-right.svg" alt="arrow-right" />
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="recipes__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <h3>Cilantro Lime Rice</h3>
+              <p class="date">ON JULY 20, 2022</p>
+              <p>
+                Opening My cilantro lime rice recipe makes a delicious and zesty
+                side dish for so many tasty meals. It takes only a few minutes
+                to prep, and within 20 minutes you’ll have a...
+              </p>
+            </div>
+
+            <div class="recipes__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <h3>Vegan Creamy Polenta Recipe</h3>
+              <p class="date">ON JULY 13, 2022</p>
+              <p>
+                Opening Make delicious vegan creamy polenta a staple dish in
+                your home with this easy recipe. Simple, reliable, and versatile
+                - this perfect warming winter meal can be jazzed up with any
+                number...
+              </p>
+            </div>
+
+            <div class="recipes__content-card">
+              <img src="./images/pic.png" alt="pic" />
+              <h3>Vegan Vegetable Stock Recipe</h3>
+              <p class="date">ON JULY 06, 2022</p>
+              <p>
+                Opening Go au naturel and use up all of your leftover vegetables
+                by whipping up a delicious and easy homemade vegan vegetable
+                stock. Hugely versatile! This is a handy ingredient to always
+                have...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer hide">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-top">
+            <div class="footer__content-top-left-menu">
+              <div class="footer-menu-column">
+                <h4>Ambassadors</h4>
+                <ul>
+                  <li>Venus Williams</li>
+                  <li>Rémy Métailler</li>
+                  <li>Nick McNutt</li>
+                  <li>Justin Fields</li>
+                  <li>Megan Roup</li>
+                </ul>
+              </div>
+
+              <div class="footer-menu-column">
+                <h4>Our Company</h4>
+                <ul>
+                  <li>Investors</li>
+                  <li>Medical Advisory Board</li>
+                  <li>Indoor Plants</li>
+                  <li>Juices & Cleanses</li>
+                  <li>Coffee Subscription</li>
+                  <li>Vegan Groceries in Canada</li>
+                  <li>Vegan Groceries in UK</li>
+                </ul>
+              </div>
+
+              <div class="footer-menu-column">
+                <h4>Informations</h4>
+                <ul>
+                  <li>FAQ</li>
+                  <li>Contact Us</li>
+                  <li>Shipping & Returns</li>
+                  <li>Wholesale</li>
+                  <li>Affiliate</li>
+                  <li>Terms & Conditions</li>
+                  <li>Privacy Policy</li>
+                </ul>
+              </div>
+
+              <div class="footer-menu-column">
+                <h4>PlantX</h4>
+                <ul>
+                  <li>Our Story</li>
+                  <li>Shop</li>
+                  <li>XMarket</li>
+                  <li>Blog</li>
+                  <li>PlantX Owned Brands</li>
+                  <li>News</li>
+                  <li>Careers</li>
+                  <li>PlantX App</li>
+                  <li>PlantX Vodcast</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__content-top-right-socials">
+              <div class="socials">
+                <div class="socials-content">
+                  <h4>Stay Curious</h4>
+                  <div class="socials-icons">
+                    <img src="./icons/facebook.png" alt="facebook" />
+                    <img src="./icons/linkedin.png" alt="linkedin" />
+                    <img src="./icons/twitter.png" alt="twitter" />
+                    <img src="./icons/instagram.png" alt="instagram" />
+                    <img src="./icons/youtube.png" alt="youtube" />
+                    <img src="./icons/tik-tok.png" alt="tik-tok" />
+                  </div>
+                </div>
+                <img class="socials-pic" src="./images/pic.png" alt="pic" />
+              </div>
+              <div class="subscription">
+                <h4>Join The Community</h4>
+                <form class="email-form">
+                  <input type="email" placeholder="enter your email address" />
+                  <div class="submit-email-button">SUBMIT</div>
+                </form>
               </div>
             </div>
           </div>
 
+          <div class="footer__content-bottom">
+            <p>© 2022 PlantX™️ All rights Reserved</p>
+            <div class="footer__content-bottom-blocks">
+              <div class="blocks-left">
+                <div class="block block-green"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block block-wide"></div>
+              </div>
+              <div class="blocks-right"></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-</body>
+    </footer>
+  </body>
 </html>
