@@ -1,0 +1,178 @@
+@import url(./reset.css);
+@import url(./grid12.css);
+@import url(./media.css);
+
+
+:root {
+  --accent: #66cc66;
+  --image: url(../images/pic.png);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* min-width: 1600px; */
+}
+
+.hide {
+  display: none;
+}
+
+.transparent {
+  color: transparent;
+  opacity: 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header::before {
+  content: "";
+  background-color: #000;
+  min-width: 100%; /*не работает 100%*/
+  height: 50px;
+
+  position: absolute;
+  z-index: -1;
+}
+
+.header__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 9px;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  font-size: 14px;
+}
+
+.header__info-left {
+  display: flex;
+  align-items: center;
+}
+
+.header__info-center {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+span {
+  font-weight: 700;
+}
+
+.header__info-button-more {
+  background-color: var(--accent);
+  padding: 5px 10px 6px;
+}
+
+.header__info-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.header__info-right :last-child {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.header__info-right-country {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--image) center;
+}
+
+.header__logo {
+  display: flex;
+  padding: 10px 0 30px;
+  margin: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+}
+
+.burger-menu,
+.user-account,
+.block-mobile {
+  display: none;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 415px;
+  height: 46px;
+  padding-left: 12px;
+  border-radius: 23px;
+  background-color: #d9d9d9;
+  font-size: 14px;
+}
+
+.search-form input {
+  width: 100%;
+  color: #969696;
+  font-weight: 300;
+}
+
+.search-form a {
+  background-color: var(--accent);
+  border-radius: 0 23px 23px 0;
+  border-left: 4px solid white;
+  height: 46px;
+  width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-icons {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  position: relative;
+}
+
+.header__logo-icons::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: var(--accent);
+
+  position: absolute;
+  right: -13px;
+  top: -13px;
+}
+
+.header__logo-icons-account {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 23px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+}
+
+
