@@ -173,6 +173,151 @@ span {
   font-weight: 700;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+  margin-bottom: 40px;
 }
 
+/* product card */
 
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__content-breadcramps {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 25px;
+
+}
+
+.product-card__content-product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.product-card__content-product-image {
+  display: flex;
+  gap: 40px;
+}
+
+.content-product-image-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-left {
+  background: url(../images/pic.png);
+  background-position: center;
+  width: 70px;
+  height: 93px;
+}
+
+.content-product-image-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.image-right {
+  background: url(../images/pic.png);
+  background-size: cover;
+  width: 360px;
+  height: 360px;
+}
+
+.product-card__content-product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+div p.price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.margin-10 {
+  margin-bottom: 10px;
+}
+
+.margin-20 {
+  margin-bottom: 20px;
+}
+
+.margin-25 {
+  margin-bottom: 25px;
+}
+
+.forms {
+  display: flex;
+  gap: 15px;
+}
+
+select.form-container {
+  border: 2px solid #D9D9D9;
+  border-radius: 40px;
+  padding: 14px 110px 14px 12px;
+  
+
+  font-weight: 700;
+  font-size: 14px;
+
+  /* position: relative; */
+}
+
+form.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+div.form-container {
+  border: 2px solid #D9D9D9;
+  border-radius: 40px;
+  padding: 14px 12px 15px 12px;
+
+  display: flex;
+  gap: 92px;
+}
+
+div form.subscription {
+  width: 244px;
+}
+
+.subtotal {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.price-subtotal {
+  font-weight: 500;
+  font-size: 28px;
+  max-width: 244px;
+}
+
+.button-add-to-cart {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  background: #000;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 35px;
+}
