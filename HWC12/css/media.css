@@ -90,16 +90,16 @@ div.content-product-image-right {
 }
 
 form select.form-container {
-  padding: 14px 260px 14px 12px;
+  padding: 14px 250px 14px 12px;
 }
 
 form div.form-container {
   padding: 14px 35px 15px 34px;
-  gap: 150px;
+  gap: 140px;
 }
 
 div.product-card__content-product form.subscription {
-  width: 394px;
+  width: 390px;
 }
 
 
