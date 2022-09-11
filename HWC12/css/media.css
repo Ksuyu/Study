@@ -70,4 +70,38 @@
     text-align: center;
     margin-top: 40px;
   }
+
+  div.content-product-image-left {
+  display: none;
+}
+
+div.image-right {
+  width: 95px;
+  height: 95px;
+}
+
+.product-card__content-product {
+  justify-content: center;
+  position: relative;
+}
+
+div.content-product-image-right {
+  gap: 115px;
+}
+
+form select.form-container {
+  padding: 14px 260px 14px 12px;
+}
+
+form div.form-container {
+  padding: 14px 35px 15px 34px;
+  gap: 150px;
+}
+
+div.product-card__content-product form.subscription {
+  width: 394px;
+}
+
+
+
 }
