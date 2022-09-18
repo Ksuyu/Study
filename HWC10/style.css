@@ -92,3 +92,12 @@ div .equal {
   background-color: #644d23;
   grid-area: 7 / 4;
 }
+
+
+:is(.sign, .numbers):hover {
+  background-color: #393939;
+}
+
+:is(.sign, .numbers):active {
+  background-color: #757474;
+}
