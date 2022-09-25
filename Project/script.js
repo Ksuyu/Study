@@ -12,17 +12,26 @@ window.onload = function () {
   let lives;             // Lives
   let counter;           // Count correct geusses
   let space;              // Number of spaces in word '-'
+  let letters;           //Create ul alphabet
+  let correct;            // Create ul correct letter
 
   // Get elements
   let showLives = document.getElementById("mylives");
-  let showCatagory = document.getElementById("scatagory");
-  let getHint = document.getElementById("hint");
   let showClue = document.getElementById("clue");
+
+  let rope = document.getElementById("rope");
+  let body = document.getElementById("body");
+  let left_arm = document.getElementById("left_arm");
+  let right_arm = document.getElementById("right_arm");
+  let left_leg = document.getElementById("left_leg");
+  let right_leg = document.getElementById("right_leg");
+  let head = document.getElementById("head");
+
 
   // create alphabet ul
   let buttons = function () {
     let myButtons = document.getElementById('buttons');
-    let letters = document.createElement('ul');
+    letters = document.createElement('ul');
 
     for (let i = 0; i < alphabet.length; i++) {
       letters.id = 'alphabet';
@@ -34,9 +43,8 @@ window.onload = function () {
       letters.appendChild(list);
     }
   }
-    
   
-  // выбор категории
+  // choose category
   let selectCat = function () {
     if (chosenCategory === categories[0]) {
       catagoryName.innerHTML = "Категория: деревья";
@@ -47,9 +55,9 @@ window.onload = function () {
     }
   }
 
-  // Подсказки ul
+  // Hints ul
    result = function () {
-    wordHolder = document.getElementById('hold');
+    let wordHolder = document.getElementById('hold');
     correct = document.createElement('ul');
 
     for (let i = 0; i < word.length; i++) {
@@ -73,7 +81,7 @@ window.onload = function () {
    comments = function () {
     showLives.innerHTML = "Осталось " + lives + " жизней";
     if (lives < 1) {
-      showLives.innerHTML = "Конец!";
+      showLives.innerHTML = "Конец игры!";
     }
     for (let i = 0; i < geusses.length; i++) {
       if (counter + space === geusses.length) {
@@ -82,75 +90,12 @@ window.onload = function () {
     }
   }
 
-      // Animate man
-  let animate = function () {
-    let drawMe = lives ;
-    drawArray[drawMe]();
-  }
+ 
 
   
    // Hangman
-  canvas =  function(){
 
-    myStickman = document.getElementById("stickman");
-    context = myStickman.getContext('2d');
-    context.beginPath();
-    context.strokeStyle = "#fff";
-    context.lineWidth = 2;
-  };
   
-    head = function(){
-      myStickman = document.getElementById("stickman");
-      context = myStickman.getContext('2d');
-      context.beginPath();
-      context.arc(60, 25, 10, 0, Math.PI*2, true);
-      context.stroke();
-    }
-    
-  draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
-    
-    context.moveTo($pathFromx, $pathFromy);
-    context.lineTo($pathTox, $pathToy);
-    context.stroke(); 
-}
-
-   frame1 = function() {
-     draw (0, 150, 150, 150);
-   };
-   
-   frame2 = function() {
-     draw (10, 0, 10, 600);
-   };
-  
-   frame3 = function() {
-     draw (0, 5, 70, 5);
-   };
-  
-   frame4 = function() {
-     draw (60, 5, 60, 15);
-   };
-  
-   torso = function() {
-     draw (60, 36, 60, 70);
-   };
-  
-   rightArm = function() {
-     draw (60, 46, 100, 50);
-   };
-  
-   leftArm = function() {
-     draw (60, 46, 20, 50);
-   };
-  
-   rightLeg = function() {
-     draw (60, 70, 100, 100);
-   };
-  
-   leftLeg = function() {
-     draw (60, 70, 20, 100);
-   };
-  
-  drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1]; 
 
 
   // OnClick Function
@@ -169,7 +114,12 @@ window.onload = function () {
       if (j === -1) {
         lives -= 1;
         comments();
-        animate();
+        rope.classList.remove("hide")
+
+
+
+
+
       } else {
         comments();
       }
@@ -182,7 +132,7 @@ window.onload = function () {
     categories = [
         ["тополь", "кипарис", "яблоня", "клен", "бук", "черешня", "каштан"],
         ["чужой", "козырные-тузы", "титаник", "зеленая-миля", "хатико"],
-        ["днепр", "житомир", "львов", "одесса", "тернополь"]
+        ["днепр", "житомир", "львов", "одесса", "файне місто"]
     ];
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -198,7 +148,6 @@ window.onload = function () {
     result();
     comments();
     selectCat();
-    canvas();
   }
 
   play();
@@ -208,9 +157,9 @@ window.onload = function () {
     hint.onclick = function() {
 
       hints = [
-        ["Based in Mersyside", "Based in Mersyside", "First Welsh team to reach the Premier Leauge", "Owned by A russian Billionaire", "Once managed by Phil Brown", "2013 FA Cup runners up", "Gazza's first club"],
-        ["Science-Fiction horror film", "1971 American action film", "Historical drama", "Anamated Fish", "Giant great white shark"],
-        ["Northern city in the UK", "Home of AC and Inter", "Spanish capital", "Netherlands capital", "Czech Republic capital"]
+        ["жара, июль", "вечнозелёное", "перед её плодом не устоял Адам", "канадцы очень любят сироп из его сока", "самоходный зенитный ракетный комплекс", "на ней ростут сладкие бордовые ягоды", "цветущий символ Киева"],
+        ["ужастик Ридли Скотта", "прозвище Бадди Израэла из боевика о наемных убийцах", "повесть о том, как Кейт утопила Лео", "драма по роману Стивена Кинга с Томом Хэнксом в главной роли", "собака-ждун"],
+        ["город в центре Украины", "печатают бумагу для банкнот всей Европы", "западный царь зверей", "жемчужина Украины", "файне місто"]
     ];
 
     let catagoryIndex = categories.indexOf(chosenCategory);
@@ -224,7 +173,6 @@ window.onload = function () {
     correct.parentNode.removeChild(correct);
     letters.parentNode.removeChild(letters);
     showClue.innerHTML = "";
-    context.clearRect(0, 0, 400, 400);
     play();
   }
 }
