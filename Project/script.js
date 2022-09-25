@@ -181,7 +181,7 @@ window.onload = function () {
   play = function () {
     categories = [
         ["тополь", "кипарис", "яблоня", "клен", "бук", "черешня", "каштан"],
-        ["чужой", "козырнфе-тузы", "титаник", "зеленая-миля", "хатико"],
+        ["чужой", "козырные-тузы", "титаник", "зеленая-миля", "хатико"],
         ["днепр", "житомир", "львов", "одесса", "тернополь"]
     ];
 
@@ -215,7 +215,7 @@ window.onload = function () {
 
     let catagoryIndex = categories.indexOf(chosenCategory);
     let hintIndex = chosenCategory.indexOf(word);
-    showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
+    showClue.innerHTML = "Подсказка: - " +  hints [catagoryIndex][hintIndex];
   };
 
    // Reset

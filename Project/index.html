@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="man">
+    <canvas id="stickman" class="man">
       <img class="hide rope" src="./images/rope.png" alt="rope" />
       <img class="hide body" src="./images/body.png" alt="body" />
       <img class="hide left-arm" src="./images/left-arm.png" alt="left-arm" />
@@ -16,31 +16,20 @@
       <img class="hide left-leg" src="./images/left-leg.png" alt="left-leg" />
       <img class="hide right-leg" src="./images/right-leg.png" alt="right-leg"/>
       <img class="hide head" src="./images/head.png" alt="head" />
-    </div>
+    </canvas>
 
     <div class="background">
-
-      <div class="wrapper">
         <h1>Виселица</h1>
         <p>Используйте алфавит, чтобы отгадать слово или нажмите на подсказку</p>
-      </div>
-  
-      <div class="wrapper">
         <div id="buttons"></div>
         <p id="catagoryName"></p>
         <div id="hold"></div>
         <p id="mylives"></p>
         <p id="clue">Подсказка -</p>
-        <canvas id="stickman"
-          >This Text will show if the Browser does NOT support HTML5 Canvas
-          tag</canvas
-        >
         <div class="container">
           <button id="hint">Подсказка</button>
           <button id="reset">Начать заново</button>
         </div>
-      </div>
-
     </div>
 
 
