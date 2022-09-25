@@ -1,33 +1,30 @@
 window.onload = function () {
 
-  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-        'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-        't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  let alphabet = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з',
+        'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т',
+        'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'];
   
-  var categories;         // Array of topics
-  var chosenCategory;     // Selected catagory
-  var getHint ;          // Word getHint
-  var word ;              // Selected word
-  var guess ;             // Geuss
-  var geusses = [ ];      // Stored geusses
-  var lives ;             // Lives
-  var counter ;           // Count correct geusses
-  var space;              // Number of spaces in word '-'
+  let categories;         // Array of topics
+  let chosenCategory;     // Selected catagory
+  let word;              // Selected word
+  let guess;             // Geuss
+  let geusses = [ ];      // Stored geusses
+  let lives;             // Lives
+  let counter;           // Count correct geusses
+  let space;              // Number of spaces in word '-'
 
   // Get elements
-  var showLives = document.getElementById("mylives");
-  var showCatagory = document.getElementById("scatagory");
-  var getHint = document.getElementById("hint");
-  var showClue = document.getElementById("clue");
-
-
+  let showLives = document.getElementById("mylives");
+  let showCatagory = document.getElementById("scatagory");
+  let getHint = document.getElementById("hint");
+  let showClue = document.getElementById("clue");
 
   // create alphabet ul
-  var buttons = function () {
-    myButtons = document.getElementById('buttons');
-    letters = document.createElement('ul');
+  let buttons = function () {
+    let myButtons = document.getElementById('buttons');
+    let letters = document.createElement('ul');
 
-    for (var i = 0; i < alphabet.length; i++) {
+    for (let i = 0; i < alphabet.length; i++) {
       letters.id = 'alphabet';
       list = document.createElement('li');
       list.id = 'letter';
@@ -39,23 +36,23 @@ window.onload = function () {
   }
     
   
-  // Select Catagory
-  var selectCat = function () {
+  // выбор категории
+  let selectCat = function () {
     if (chosenCategory === categories[0]) {
-      catagoryName.innerHTML = "The Chosen Category Is Premier League Football Teams";
+      catagoryName.innerHTML = "Категория: деревья";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "The Chosen Category Is Films";
+      catagoryName.innerHTML = "Категория: фильмы";
     } else if (chosenCategory === categories[2]) {
-      catagoryName.innerHTML = "The Chosen Category Is Cities";
+      catagoryName.innerHTML = "Категория: города";
     }
   }
 
-  // Create geusses ul
+  // Подсказки ul
    result = function () {
     wordHolder = document.getElementById('hold');
     correct = document.createElement('ul');
 
-    for (var i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length; i++) {
       correct.setAttribute('id', 'my-word');
       guess = document.createElement('li');
       guess.setAttribute('class', 'guess');
@@ -74,20 +71,20 @@ window.onload = function () {
   
   // Show lives
    comments = function () {
-    showLives.innerHTML = "You have " + lives + " lives";
+    showLives.innerHTML = "Осталось " + lives + " жизней";
     if (lives < 1) {
-      showLives.innerHTML = "Game Over";
+      showLives.innerHTML = "Конец!";
     }
-    for (var i = 0; i < geusses.length; i++) {
+    for (let i = 0; i < geusses.length; i++) {
       if (counter + space === geusses.length) {
-        showLives.innerHTML = "You Win!";
+        showLives.innerHTML = "Вы выиграли!";
       }
     }
   }
 
       // Animate man
-  var animate = function () {
-    var drawMe = lives ;
+  let animate = function () {
+    let drawMe = lives ;
     drawArray[drawMe]();
   }
 
@@ -159,16 +156,16 @@ window.onload = function () {
   // OnClick Function
    check = function () {
     list.onclick = function () {
-      var geuss = (this.innerHTML);
+      let geuss = (this.innerHTML);
       this.setAttribute("class", "active");
       this.onclick = null;
-      for (var i = 0; i < word.length; i++) {
+      for (let i = 0; i < word.length; i++) {
         if (word[i] === geuss) {
           geusses[i].innerHTML = geuss;
           counter += 1;
         } 
       }
-      var j = (word.indexOf(geuss));
+      let j = (word.indexOf(geuss));
       if (j === -1) {
         lives -= 1;
         comments();
@@ -183,9 +180,9 @@ window.onload = function () {
   // Play
   play = function () {
     categories = [
-        ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
-        ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"],
-        ["manchester", "milan", "madrid", "amsterdam", "prague"]
+        ["тополь", "кипарис", "яблоня", "клен", "бук", "черешня", "каштан"],
+        ["чужой", "козырнфе-тузы", "титаник", "зеленая-миля", "хатико"],
+        ["днепр", "житомир", "львов", "одесса", "тернополь"]
     ];
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -216,8 +213,8 @@ window.onload = function () {
         ["Northern city in the UK", "Home of AC and Inter", "Spanish capital", "Netherlands capital", "Czech Republic capital"]
     ];
 
-    var catagoryIndex = categories.indexOf(chosenCategory);
-    var hintIndex = chosenCategory.indexOf(word);
+    let catagoryIndex = categories.indexOf(chosenCategory);
+    let hintIndex = chosenCategory.indexOf(word);
     showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
   };
 
