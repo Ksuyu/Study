@@ -190,6 +190,24 @@ button:hover {
   opacity: 0.4;
 }
 
+@media (max-width: 2560px) {
+  .man {
+    left: 350px;
+    top: 460px;
+  }
+
+@media (max-width: 2300px) {
+  .man {
+    left: 300px;
+    top: 420px;
+  }
+@media (max-width: 2000px) {
+  .man {
+    left: 220px;
+    top: 360px;
+  }
+
+}
 @media (max-width: 767px) {
   #alphabet {
     padding: 0 0 0 15px;
