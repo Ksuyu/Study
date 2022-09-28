@@ -27,6 +27,8 @@ window.onload = function () {
   let right_leg = document.getElementById("right_leg");
   let head = document.getElementById("head");
 
+  // let hangman = [rope, body, left_arm, right_arm, left_leg, right_leg, head];
+
 
   // create alphabet ul
   let buttons = function () {
@@ -90,14 +92,6 @@ window.onload = function () {
     }
   }
 
- 
-
-  
-   // Hangman
-
-  
-
-
   // OnClick Function
    check = function () {
     list.onclick = function () {
@@ -114,11 +108,29 @@ window.onload = function () {
       if (j === -1) {
         lives -= 1;
         comments();
-        rope.classList.remove("hide")
-
-
-
-
+        
+        switch (lives) {
+          case 6:
+            rope.classList.remove("hide");
+            break;
+          case 5:
+            head.classList.remove("hide");
+            break;
+          case 4:
+            body.classList.remove("hide");
+            break;
+          case 3:
+            left_arm.classList.remove("hide");
+            break;
+          case 2:
+            right_arm.classList.remove("hide");
+            break;
+          case 1:
+            left_leg.classList.remove("hide");
+            break;
+          case 0:
+            right_leg.classList.remove("hide");
+        }
 
       } else {
         comments();
@@ -142,7 +154,7 @@ window.onload = function () {
     buttons();
 
     geusses = [ ];
-    lives = 10;
+    lives = 7;
     counter = 0;
     space = 0;
     result();
