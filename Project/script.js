@@ -85,9 +85,7 @@ window.onload = function () {
     if (lives < 1) {
       showLives.innerHTML = "Вы проиграли!";
 
-    // letters.disabled = true;
-    // letters.addEventListener('click', disableButton);
-    // document.getElementById("buttons").disabled = true; 
+   
     let letterButton = document.getElementById("alphabet");
     letterButton.classList.add("disabledButton");
     }
@@ -206,8 +204,8 @@ window.onload = function () {
     correct.parentNode.removeChild(correct);
     letters.parentNode.removeChild(letters);
     showClue.innerHTML = "";
-    play();
     lives = 7;
+    play();
 
     for (let z = 0; z < hangman.length; z++) {
       hangman[z].classList.add("hide");
