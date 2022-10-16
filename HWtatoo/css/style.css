@@ -22,6 +22,8 @@ h2 {
   font-size: 45px;
   line-height: 86%;
   text-transform: uppercase;
+  margin-bottom: 60px;
+
 }
 
 h3 {
@@ -29,7 +31,6 @@ h3 {
   font-size: 200px;
   line-height: 86%;
   text-transform: uppercase;
-  margin-bottom: 60px;
 
   color: var(--black);
   text-shadow: 1px 0 1px rgba(255, 255, 255, 0.25), 
@@ -140,7 +141,70 @@ margin: 150px 0 110px 90px;
 /* Masters */
 
 .masters {
-  margin: 220px 0 0;
-  padding: 0 90px;
+  position: relative;
+  margin: 220px 90px 0 90px;
+}
 
+.masters__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.masters__card-main img {
+  max-width: 445px;
+  margin-bottom: 24px;
+}
+
+.masters__card-description {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.masters__card-description img {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 0;
+}
+
+.positioning {
+  position: absolute;
+  top: 350px;
+  left: 0;
+
+}
+
+/* About Us */
+
+.about-us {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 85px;
+
+  margin: 215px 90px 0 65px;
+
+}
+
+.about-us__text p {
+  font-size: 19px;
+  line-height: 150%;
+  text-indent: 1.5em;
+  font-weight: 500;
+
+  max-width: 680px;
+
+}
+
+.about-us__text p span {
+  font-weight: 600;
+}
+
+ img.about-us__logo {
+  position: absolute;
+  top: -110px;
+  right: -40px;
 }
