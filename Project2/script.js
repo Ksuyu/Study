@@ -1,37 +1,4 @@
-// const link = 'https://collectionapi.metmuseum.org/public/collection/v1/objects';
-// const link_id = (id) => `${link}/${id}`;
-// const painting = document.getElementById('painting');
-// const button = document.querySelector('button-random');
 
-
-
-// let objectIDs;
-
-// fetch(link).then(response => response.json()).then(data => pic(data));
-
-// function getRandom(max){
-//   return Math.floor(Math.random() * max);
-// }
-
-// const pic = (data) => {
-
-//   painting.src = data.primaryImage;
-
-// }
-
-
-
-
-// fetch(link).then(response => response.json()).then(console.log);
-
-// function getRandom(max){
-  //   return Math.floor(Math.random() * max);
-  // }
-  
-
-
-
-// -----
   function ajax(url, callback){
     const aj = new XMLHttpRequest();
     aj.onload = () => {
@@ -60,7 +27,6 @@ function init(){
 console.log(OBJS);
 
 
-
 function getRandom(max){
   return Math.floor(Math.random() * max);
 }
@@ -69,25 +35,32 @@ function getRandomArt(){
   const id = OBJS[getRandom(OBJS.length)];
   const url = `${ link }/${ id }`;
   ajax(url, (t) => {
-      const r = JSON.parse(t);
-    
-      if (r.artistDisplayName != "" && r.primaryImageSmall != "") { //тормозит проверка
+    const r = JSON.parse(t);
+
+      // if(r.classification = 'Drawings') { НЕ РАБОТАЕТ
         console.log(r);
         renderImage(r);
         setArtist(r);
 
-      };
+      // }
+  
+
   })
 }
 
 function setArtist(n){
+  if(n.artistDisplayName == '') {
+    document.querySelector('.artist-name').innerHTML = 'Unknown Artist';
+  } else {
   document.querySelector('.artist-name').innerHTML = n.artistDisplayName;
 }
-
+}
 
 function renderImage(d){
   painting.src = d.primaryImageSmall;
   painting.setAttribute('alt', d.title);
+  document.querySelector('.painting-year').innerHTML = d.period;
+
 }
 
 document.querySelector('.button-random').addEventListener('click', getRandomArt);
