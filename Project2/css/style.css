@@ -1,0 +1,28 @@
+@import url(./reset.css);
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #393939;
+}
+
+.container {
+  display: flex;
+  margin: 15px 30px;
+}
+
+.container_left-side {
+  width: 50%;
+}
+
+.container_right-side {
+  text-align: right;
+  width: 70%;
+
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 7rem;
+  line-height: 0.9;
+}

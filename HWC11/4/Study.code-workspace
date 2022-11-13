@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\Practice\\Positioning 1\\HWC6"
+		}
+	],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Study"
+  }
+}
