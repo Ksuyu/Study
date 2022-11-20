@@ -10,6 +10,27 @@ body {
 
 }
 
+.mask {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: .6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask-absolute {
+  position: absolute;
+}
+
+.hide {
+  opacity: 0;
+}
+
 
 .logo {
   display: flex;
@@ -20,6 +41,19 @@ body {
 
 .logo-spacing{
   letter-spacing: 0.07rem;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+
+  position: absolute;
+  left: 30px;
+  top: 230px;
+  text-align: left;
 }
 
 h2 {
@@ -47,8 +81,8 @@ a:hover, a:visited, a:link, a:active
   flex-direction: column;
   /* justify-content: center; */
   align-items:center;
-  gap: 50px;
-  padding-top: 100px;
+  gap: 120px;
+  padding-top: 80px;
   background-image: url(../pics/original_gh.jpg);
   background-size: cover;
   height: 100vh;
@@ -58,12 +92,6 @@ a:hover, a:visited, a:link, a:active
 
 
 
-/* h1 {
-  font-weight: 500;
-  font-size: 7rem;
-  line-height: 0.9;
-  text-transform: uppercase;
-} */
 
 .picture {
   display: flex;
@@ -81,7 +109,7 @@ a:hover, a:visited, a:link, a:active
 .details {
   font-size: 1rem;
   font-weight: 500;
-  float: right;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .slider {
@@ -96,20 +124,21 @@ a:hover, a:visited, a:link, a:active
   animation: scroll 80s linear infinite;
   display: flex;
   gap: 5px;
-  max-width: calc(250px * 18);
+  width: calc(250px * 18);
 
 }
 
-.slider .slide-track:hover {
+.slide-track:hover {
   animation-play-state: paused;
 }
 
-.slider .slide {
+.slide {
   /* height: 250px; */
-  max-width: 250px;
+  width: 250px;
 }
 
 input {
+  position: relative;
   width: 250px;
 }
 
@@ -125,7 +154,7 @@ input {
 .search {
   border-radius: 50px;
   border: 1px solid #393939;
-  padding: 1px 1px 1px 12px;
+  padding: 1px 1px 1px 16px;
   background-color: white;
 
 }
@@ -137,6 +166,52 @@ input {
 
 }
 
+.loader {
+  --loader-height: calc(100px / 7);
+  display: flex;
+  position: relative;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+}
+.loader::before,
+.loader > span {
+  display: block;
+  width: var(--loader-height);
+  height: var(--loader-height);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  
+  animation-name: to-right;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.loader > span:nth-child(even) {
+  visibility: hidden;
+}
+.loader > span:first-child {
+  animation-name: scale-up;
+}
+.loader > span:last-child {
+  animation-name: scale-up;
+  animation-direction: reverse;
+}
+
+@keyframes to-right {
+  to {
+    transform: translateX(200%);
+  }
+}
+@keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
 
 
