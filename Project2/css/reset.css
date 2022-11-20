@@ -29,11 +29,11 @@ img {
 	vertical-align: top;
 }
 
-img, svg {
+/* img, svg {
   vertical-align: top;
 	max-width: 100%;
 	height: auto;
-}
+} */
 
 address {
   font-style: normal;
@@ -81,3 +81,6 @@ label {
 legend {
 	display: block;
 }
+
+
+
