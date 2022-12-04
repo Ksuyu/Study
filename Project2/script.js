@@ -17,7 +17,6 @@ const DATA = [];
 const MAX_REQUESTS = 50;
 
 DOM.btnFind.addEventListener("click", findArtist);
-
 DOM.inpArt.addEventListener("keyup", function (e) {
   if (e.code === "Enter") {
     DOM.btnFind.click();
@@ -45,6 +44,7 @@ async function findArtist() {
       makeMultiRequests(next50, artistName);
     }, i * 2000);
   }
+  
 }
 
 async function makeMultiRequests(ids, artistName) {
@@ -68,10 +68,11 @@ async function makeMultiRequests(ids, artistName) {
     (html, art) => `${html}${render(art)}`,
     ""
   );
+
   DATA.push(...datasFiltered);
 
-  DOM.inpArt.value = "";
-  setArtistName();
+  // DOM.inpArt.value = "";
+  DOM.artistFullName.innerHTML = DATA.at(-1).artistDisplayName;
   loaderOff();
 }
 
@@ -82,11 +83,9 @@ function render({ primaryImageSmall, objectEndDate }) {
     <p class="details">Created in ${objectEndDate}</p>   
   </div>
     `;
+    
 }
 
-function setArtistName() {
-  DOM.artistFullName.innerHTML = DATA[0].artistDisplayName;
-}
 
 //loader
 
