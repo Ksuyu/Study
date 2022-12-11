@@ -38,7 +38,7 @@
     <script>
       const Drug = (props) => {
         return React.createElement("article", {}, [
-          React.createElement("div", { className: "image" }, props.image),
+          React.createElement("img", {src: props.image}, props.image),
           React.createElement("h2", {}, props.name),
           React.createElement("p", {}, props.slangName),
           React.createElement("p", {}, props.effect),

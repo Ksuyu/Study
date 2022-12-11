@@ -12,5 +12,61 @@
       "number" : 70,
       "height" : "1.2 m",
       "weight" : "36.0 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/pikachu.avif",
+      "name" : "Pikachu",
+      "number" : 25,
+      "height" : "0.4 m",
+      "weight" : "6.0 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/squirtle.avif",
+      "name" : "Squirtle",
+      "number" : 7,
+      "height" : "0.5 m",
+      "weight" : "9.0 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/jigglypuff.avif",
+      "name" : "Jigglypuff",
+      "number" : 39,
+      "height" : "0.5 m",
+      "weight" : "5.5 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/arbok.avif",
+      "name" : "Arbok",
+      "number" : 24,
+      "height" : "3.5 m",
+      "weight" : "65.0 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/clefairy.avif",
+      "name" : "Clefairy",
+      "number" : 35,
+      "height" : "0.6 m",
+      "weight" : "7.5 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/raticate.avif",
+      "name" : "Raticate",
+      "number" : 20,
+      "height" : "0.7 m",
+      "weight" : "18.5 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/nidorina.avif",
+      "name" : "Nidorina",
+      "number" : 30,
+      "height" : "0.8 m",
+      "weight" : "20.0 kg"
+  },
+  {
+      "image" : "https://img.pokemondb.net/artwork/avif/zubat.avif",
+      "name" : "Zubat",
+      "number" : 41,
+      "height" : "0.8 m",
+      "weight" : "7.5 kg"
   }
 ]

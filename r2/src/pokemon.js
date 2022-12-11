@@ -5,9 +5,12 @@ export default function Pokemon({ image, number, weight, name, height }){
     console.count(name);
 
     const addLike = () => setLikes(likes + 1);
+    if (likes > 0 || likes < 5) {
+
+    }
 
     return (
-        <div>
+        <div className = "card">
             <img src={ image } alt={ name }/>
             <h3>{ name }</h3>
             <p>#{ number } in DB</p>
